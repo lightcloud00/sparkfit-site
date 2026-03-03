@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPARK — Where Fitness Meets Connection</title>
+  <meta name="description" content="SPARK is the #1 fitness-first dating &amp; social app. Find workout partners, date with purpose, and join group fitness events. 50,000+ active members.">
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6.5 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230e0d0b'/><text x='4' y='24' font-size='22' font-family='sans-serif' font-weight='900' fill='%23e8a634'>S</text></svg>">
+</head>
+<body>
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo" aria-label="SPARK home">
+        <svg class="nav__logo-icon" width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <rect width="36" height="36" rx="8" fill="#e8a634" opacity="0.12"/>
+          <path d="M18 6L22 14L18 12L14 14L18 6Z" fill="#e8a634"/>
+          <path d="M12 16L18 30L24 16L18 20L12 16Z" fill="#e8a634" opacity="0.7"/>
+        </svg>
+        <span class="nav__logo-text"><em>S</em>PARK</span>
+      </a>
+
+      <div class="nav__links">
+        <a href="#how-it-works" class="nav__link">How It Works</a>
+        <a href="#features" class="nav__link">Features</a>
+        <a href="#safety" class="nav__link">Safety</a>
+        <a href="#pricing" class="nav__link">Pricing</a>
+        <a href="#blog" class="nav__link">Blog</a>
+        <a href="#careers" class="nav__link">Careers</a>
+      </div>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <i class="fa-solid fa-sun theme-toggle__icon--light"></i>
+          <i class="fa-solid fa-moon theme-toggle__icon--dark"></i>
+        </button>
+        <a href="#download" class="btn btn--primary btn--sm nav__cta">Get the App</a>
+      </div>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav__mobile" id="mobileNav" role="dialog" aria-label="Mobile navigation">
+      <a href="#how-it-works" class="mobile-link">How It Works</a>
+      <a href="#features" class="mobile-link">Features</a>
+      <a href="#safety" class="mobile-link">Safety</a>
+      <a href="#pricing" class="mobile-link">Pricing</a>
+      <a href="#blog" class="mobile-link">Blog</a>
+      <a href="#careers" class="mobile-link">Careers</a>
+      <a href="#download" class="btn btn--primary" style="margin-top:16px;">Get the App</a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <main id="main">
+
+    <!-- ==================== 1. HERO ==================== -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero__bg">
+        <div class="hero__glow hero__glow--gold"></div>
+        <div class="hero__glow hero__glow--red"></div>
+      </div>
+
+      <div class="container hero__content">
+        <div class="hero__text">
+          <div class="hero__badge reveal">
+            <span class="hero__badge-dot"></span>
+            50,000+ active members worldwide
+          </div>
+          <h1 class="hero__title reveal">
+            Where Fitness<br>Meets <span class="highlight">Connection</span>
+          </h1>
+          <p class="hero__desc reveal">
+            Train together. Date with purpose. Build real connections through fitness — powered by AI matching and a trust-first community.
+          </p>
+          <div class="hero__actions reveal">
+            <a href="#download" class="btn btn--primary btn--glow">
+              <i class="fa-solid fa-download"></i> Download Free
+            </a>
+            <a href="#how-it-works" class="btn btn--outline">
+              See How It Works <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="phone-glow" aria-hidden="true"></div>
+          <div class="phone-frame" aria-hidden="true">
+            <div class="phone-frame__notch"></div>
+            <div class="phone-frame__screen">
+              <div class="phone-screen__header">
+                <div class="phone-screen__logo">SPARK</div>
+              </div>
+              <div class="phone-screen__tabs">
+                <div class="phone-screen__tab">Buddy</div>
+                <div class="phone-screen__tab phone-screen__tab--active">Spark</div>
+                <div class="phone-screen__tab">Social</div>
+              </div>
+              <div class="phone-screen__card">
+                <div class="phone-screen__avatar" style="background:linear-gradient(135deg,#e85c4a,#e8a634);"></div>
+                <div class="phone-screen__info">
+                  <div class="phone-screen__name">Sarah M.</div>
+                  <div class="phone-screen__detail">CrossFit · 2mi away</div>
+                </div>
+                <div class="phone-screen__match">94%</div>
+              </div>
+              <div class="phone-screen__card">
+                <div class="phone-screen__avatar" style="background:linear-gradient(135deg,#3bb8a8,#9b72e8);"></div>
+                <div class="phone-screen__info">
+                  <div class="phone-screen__name">Mike R.</div>
+                  <div class="phone-screen__detail">Running · 5mi away</div>
+                </div>
+                <div class="phone-screen__match">91%</div>
+              </div>
+              <div class="phone-screen__card">
+                <div class="phone-screen__avatar" style="background:linear-gradient(135deg,#9b72e8,#e85c4a);"></div>
+                <div class="phone-screen__info">
+                  <div class="phone-screen__name">Jess L.</div>
+                  <div class="phone-screen__detail">Yoga · 3mi away</div>
+                </div>
+                <div class="phone-screen__match">88%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 2. LIVE STATS ==================== -->
+    <section class="stats-section" id="stats" aria-label="Platform Statistics">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stat-item reveal">
+            <div class="stat-item__number" data-target="50000" data-suffix="+" data-format="comma">0</div>
+            <div class="stat-item__label">Active Members</div>
+          </div>
+          <div class="stat-item reveal">
+            <div class="stat-item__number" data-target="2000000" data-suffix="+" data-format="abbr">0</div>
+            <div class="stat-item__label">Workouts Logged</div>
+          </div>
+          <div class="stat-item reveal">
+            <div class="stat-item__number" data-target="100000" data-suffix="+" data-format="abbr">0</div>
+            <div class="stat-item__label">Matches Made</div>
+          </div>
+          <div class="stat-item reveal">
+            <div class="stat-item__number" data-target="4.9" data-suffix="★" data-decimal="true">0</div>
+            <div class="stat-item__label">App Store Rating</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. HOW IT WORKS ==================== -->
+    <section id="how-it-works" class="how-section" aria-label="How It Works">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-label reveal">How It Works</p>
+          <h2 class="section-title reveal">Three Steps to Connection</h2>
+          <p class="section-subtitle reveal">Get started in minutes. Our AI handles the rest.</p>
+        </div>
+
+        <div class="how__grid">
+          <div class="how-step reveal stagger-item" data-stagger="0">
+            <div class="how-step__number">01</div>
+            <div class="how-step__icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="16" r="8" stroke="currentColor" stroke-width="2"/><path d="M8 40c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="how-step__title">Create Your Profile</h3>
+            <p class="how-step__desc">Set up your fitness preferences, workout style, and what you're looking for — a date, a buddy, or a community.</p>
+          </div>
+
+          <div class="how-step__connector reveal" aria-hidden="true">
+            <svg width="80" height="2" viewBox="0 0 80 2"><line x1="0" y1="1" x2="80" y2="1" stroke="currentColor" stroke-width="2" stroke-dasharray="6 4"/></svg>
+          </div>
+
+          <div class="how-step reveal stagger-item" data-stagger="1">
+            <div class="how-step__number">02</div>
+            <div class="how-step__icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2"/><path d="M24 14v10l7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M10 24h4M34 24h4M24 10v4M24 34v4" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.5"/></svg>
+            </div>
+            <h3 class="how-step__title">Set Fitness Goals</h3>
+            <p class="how-step__desc">Tell us your training schedule, intensity level, and gym preferences. Our AI builds your compatibility profile.</p>
+          </div>
+
+          <div class="how-step__connector reveal" aria-hidden="true">
+            <svg width="80" height="2" viewBox="0 0 80 2"><line x1="0" y1="1" x2="80" y2="1" stroke="currentColor" stroke-width="2" stroke-dasharray="6 4"/></svg>
+          </div>
+
+          <div class="how-step reveal stagger-item" data-stagger="2">
+            <div class="how-step__number">03</div>
+            <div class="how-step__icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M24 8l4 8 8 2-6 6 2 8-8-4-8 4 2-8-6-6 8-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="how-step__title">Connect &amp; Train</h3>
+            <p class="how-step__desc">Match with compatible people, start a conversation, and book your first workout together — virtual or IRL.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. INTERACTIVE APP DEMO (NEW) ==================== -->
+    <section id="app-demo" class="demo-section" aria-label="Interactive App Demo">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-label reveal">Interactive Demo</p>
+          <h2 class="section-title reveal">Experience SPARK</h2>
+          <p class="section-subtitle reveal">Click through the app to see how fitness meets connection.</p>
+        </div>
+
+        <div class="demo__wrapper reveal">
+          <div class="demo__phone">
+            <div class="demo__phone-frame">
+              <div class="demo__phone-notch"></div>
+              <div class="demo__phone-screen" id="demoScreen">
+                <!-- Screen 1: Discover -->
+                <div class="demo__screen demo__screen--active" data-screen="0">
+                  <div class="demo__screen-header">
+                    <span class="demo__screen-logo">SPARK</span>
+                    <span class="demo__screen-step">1/5</span>
+                  </div>
+                  <div class="demo__screen-icon"><i class="fa-solid fa-compass" style="color:var(--gold);font-size:48px;"></i></div>
+                  <h4 class="demo__screen-title">Discover</h4>
+                  <p class="demo__screen-desc">Set your fitness type, schedule, and what you're looking for.</p>
+                  <div class="demo__screen-visual">
+                    <div class="demo__tag">CrossFit</div>
+                    <div class="demo__tag demo__tag--active">Running</div>
+                    <div class="demo__tag">Yoga</div>
+                    <div class="demo__tag">HIIT</div>
+                  </div>
+                </div>
+                <!-- Screen 2: Match -->
+                <div class="demo__screen" data-screen="1">
+                  <div class="demo__screen-header">
+                    <span class="demo__screen-logo">SPARK</span>
+                    <span class="demo__screen-step">2/5</span>
+                  </div>
+                  <div class="demo__screen-icon"><i class="fa-solid fa-heart" style="color:var(--spark-red);font-size:48px;"></i></div>
+                  <h4 class="demo__screen-title">Match</h4>
+                  <p class="demo__screen-desc">Our AI finds people who match your fitness style and personality.</p>
+                  <div class="demo__screen-visual">
+                    <div class="demo__match-card">
+                      <div class="demo__match-avatar" style="background:linear-gradient(135deg,#e85c4a,#e8a634);"><span>SM</span></div>
+                      <div><strong>Sarah M.</strong><br><small>94% Match · CrossFit</small></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Screen 3: Chat -->
+                <div class="demo__screen" data-screen="2">
+                  <div class="demo__screen-header">
+                    <span class="demo__screen-logo">SPARK</span>
+                    <span class="demo__screen-step">3/5</span>
+                  </div>
+                  <div class="demo__screen-icon"><i class="fa-solid fa-comments" style="color:var(--buddy-teal);font-size:48px;"></i></div>
+                  <h4 class="demo__screen-title">Chat</h4>
+                  <p class="demo__screen-desc">Break the ice with fitness-themed conversation starters.</p>
+                  <div class="demo__screen-visual">
+                    <div class="demo__chat-bubble demo__chat-bubble--them">Hey! Want to do a 5K Saturday? 🏃</div>
+                    <div class="demo__chat-bubble demo__chat-bubble--you">Absolutely! Central Park at 8? ⚡</div>
+                  </div>
+                </div>
+                <!-- Screen 4: Workout Date -->
+                <div class="demo__screen" data-screen="3">
+                  <div class="demo__screen-header">
+                    <span class="demo__screen-logo">SPARK</span>
+                    <span class="demo__screen-step">4/5</span>
+                  </div>
+                  <div class="demo__screen-icon"><i class="fa-solid fa-dumbbell" style="color:var(--community-purple);font-size:48px;"></i></div>
+                  <h4 class="demo__screen-title">Workout Date</h4>
+                  <p class="demo__screen-desc">Meet up for a workout — video or in-person. Real activity, real connection.</p>
+                  <div class="demo__screen-visual">
+                    <div class="demo__workout-card">
+                      <i class="fa-solid fa-calendar-check" style="color:var(--gold);"></i>
+                      <div><strong>5K Run</strong><br><small>Sat 8:00 AM · Central Park</small></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Screen 5: Results -->
+                <div class="demo__screen" data-screen="4">
+                  <div class="demo__screen-header">
+                    <span class="demo__screen-logo">SPARK</span>
+                    <span class="demo__screen-step">5/5</span>
+                  </div>
+                  <div class="demo__screen-icon"><i class="fa-solid fa-trophy" style="color:var(--gold);font-size:48px;"></i></div>
+                  <h4 class="demo__screen-title">Results</h4>
+                  <p class="demo__screen-desc">Track your shared progress, earn Trust Score, and keep the momentum.</p>
+                  <div class="demo__screen-visual">
+                    <div class="demo__result-stats">
+                      <div class="demo__result-stat"><span>3.1mi</span><small>Distance</small></div>
+                      <div class="demo__result-stat"><span>28:42</span><small>Time</small></div>
+                      <div class="demo__result-stat"><span>+12</span><small>Trust Pts</small></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Demo navigation dots -->
+              <div class="demo__nav">
+                <button class="demo__dot demo__dot--active" data-demo="0" aria-label="Screen 1"></button>
+                <button class="demo__dot" data-demo="1" aria-label="Screen 2"></button>
+                <button class="demo__dot" data-demo="2" aria-label="Screen 3"></button>
+                <button class="demo__dot" data-demo="3" aria-label="Screen 4"></button>
+                <button class="demo__dot" data-demo="4" aria-label="Screen 5"></button>
+              </div>
+            </div>
+          </div>
+          <div class="demo__cta">
+            <a href="#download" class="btn btn--primary btn--glow"><i class="fa-solid fa-mobile-screen"></i> Try the App</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. APP FEATURES SHOWCASE (Tabbed) ==================== -->
+    <section id="features" class="features-section" aria-label="App Features">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-label reveal">App Modes</p>
+          <h2 class="section-title reveal">One App, Three Ways to Connect</h2>
+          <p class="section-subtitle reveal">SPARK adapts to what you need — dating, training partners, or community.</p>
+        </div>
+
+        <div class="features__tabs reveal" role="tablist" aria-label="Feature tabs">
+          <button class="features__tab active" role="tab" aria-selected="true" aria-controls="tab-spark" data-tab="spark">
+            <i class="fa-solid fa-heart"></i> Spark Mode
+          </button>
+          <button class="features__tab" role="tab" aria-selected="false" aria-controls="tab-buddy" data-tab="buddy">
+            <i class="fa-solid fa-dumbbell"></i> Buddy Mode
+          </button>
+          <button class="features__tab" role="tab" aria-selected="false" aria-controls="tab-community" data-tab="community">
+            <i class="fa-solid fa-users"></i> Community Mode
+          </button>
+        </div>
+
+        <div class="features__panels">
+          <div class="features__panel active" id="tab-spark" role="tabpanel">
+            <div class="features__panel-content">
+              <div class="features__panel-text">
+                <span class="features__panel-badge features__panel-badge--red">Premium Dating</span>
+                <h3 class="features__panel-title">Spark Mode</h3>
+                <p class="features__panel-desc">Date someone who shares your passion for fitness. Real compatibility based on lifestyle, not just looks. Our AI Compatibility Engine matches by fitness habits, personality traits, and values.</p>
+                <ul class="features__panel-list">
+                  <li><i class="fa-solid fa-check"></i> AI Compatibility Engine</li>
+                  <li><i class="fa-solid fa-check"></i> Video workout dates</li>
+                  <li><i class="fa-solid fa-check"></i> Trust Score verification</li>
+                  <li><i class="fa-solid fa-check"></i> Advanced filters &amp; unlimited swipes</li>
+                </ul>
+              </div>
+              <div class="features__panel-phone">
+                <div class="phone-frame phone-frame--sm">
+                  <div class="phone-frame__notch"></div>
+                  <div class="phone-frame__screen">
+                    <div class="phone-screen__header"><div class="phone-screen__logo">SPARK</div></div>
+                    <div class="phone-screen__tabs">
+                      <div class="phone-screen__tab">Buddy</div>
+                      <div class="phone-screen__tab phone-screen__tab--active" style="background:var(--spark-red);">Spark</div>
+                      <div class="phone-screen__tab">Social</div>
+                    </div>
+                    <div class="phone-screen__card"><div class="phone-screen__avatar" style="background:linear-gradient(135deg,#e85c4a,#e8a634);"></div><div class="phone-screen__info"><div class="phone-screen__name">Sarah M.</div><div class="phone-screen__detail">CrossFit · 94% Match</div></div><div class="phone-screen__match">&#10084;&#65039;</div></div>
+                    <div class="phone-screen__card"><div class="phone-screen__avatar" style="background:linear-gradient(135deg,#e8a634,#e85c4a);"></div><div class="phone-screen__info"><div class="phone-screen__name">Alex K.</div><div class="phone-screen__detail">HIIT · 91% Match</div></div><div class="phone-screen__match">&#10084;&#65039;</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="features__panel" id="tab-buddy" role="tabpanel" hidden>
+            <div class="features__panel-content">
+              <div class="features__panel-text">
+                <span class="features__panel-badge features__panel-badge--teal">Free</span>
+                <h3 class="features__panel-title">Buddy Mode</h3>
+                <p class="features__panel-desc">Find workout partners who match your fitness level, schedule, and gym. No dating pressure — just gains.</p>
+                <ul class="features__panel-list">
+                  <li><i class="fa-solid fa-check"></i> Match by fitness type &amp; level</li>
+                  <li><i class="fa-solid fa-check"></i> Schedule-aware pairing</li>
+                  <li><i class="fa-solid fa-check"></i> Gym &amp; location matching</li>
+                  <li><i class="fa-solid fa-check"></i> Shared workout logging</li>
+                </ul>
+              </div>
+              <div class="features__panel-phone">
+                <div class="phone-frame phone-frame--sm">
+                  <div class="phone-frame__notch"></div>
+                  <div class="phone-frame__screen">
+                    <div class="phone-screen__header"><div class="phone-screen__logo">SPARK</div></div>
+                    <div class="phone-screen__tabs">
+                      <div class="phone-screen__tab phone-screen__tab--active" style="background:var(--buddy-teal);">Buddy</div>
+                      <div class="phone-screen__tab">Spark</div>
+                      <div class="phone-screen__tab">Social</div>
+                    </div>
+                    <div class="phone-screen__card"><div class="phone-screen__avatar" style="background:linear-gradient(135deg,#3bb8a8,#e8a634);"></div><div class="phone-screen__info"><div class="phone-screen__name">Marcus J.</div><div class="phone-screen__detail">Weightlifting · 0.5mi</div></div><div class="phone-screen__match">&#128170;</div></div>
+                    <div class="phone-screen__card"><div class="phone-screen__avatar" style="background:linear-gradient(135deg,#3bb8a8,#9b72e8);"></div><div class="phone-screen__info"><div class="phone-screen__name">Priya K.</div><div class="phone-screen__detail">Running · 1.2mi</div></div><div class="phone-screen__match">&#128170;</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="features__panel" id="tab-community" role="tabpanel" hidden>
+            <div class="features__panel-content">
+              <div class="features__panel-text">
+                <span class="features__panel-badge features__panel-badge--purple">Free</span>
+                <h3 class="features__panel-title">Community Mode</h3>
+                <p class="features__panel-desc">Join group fitness events, challenges, and classes. Meet people through shared experiences.</p>
+                <ul class="features__panel-list">
+                  <li><i class="fa-solid fa-check"></i> Local group workout events</li>
+                  <li><i class="fa-solid fa-check"></i> Community fitness challenges</li>
+                  <li><i class="fa-solid fa-check"></i> Fitness class finder &amp; gym map</li>
+                  <li><i class="fa-solid fa-check"></i> Activity feed &amp; stories</li>
+                </ul>
+              </div>
+              <div class="features__panel-phone">
+                <div class="phone-frame phone-frame--sm">
+                  <div class="phone-frame__notch"></div>
+                  <div class="phone-frame__screen">
+                    <div class="phone-screen__header"><div class="phone-screen__logo">SPARK</div></div>
+                    <div class="phone-screen__tabs">
+                      <div class="phone-screen__tab">Buddy</div>
+                      <div class="phone-screen__tab">Spark</div>
+                      <div class="phone-screen__tab phone-screen__tab--active" style="background:var(--community-purple);">Social</div>
+                    </div>
+                    <div class="phone-screen__card"><div class="phone-screen__avatar" style="background:linear-gradient(135deg,#9b72e8,#3bb8a8);"></div><div class="phone-screen__info"><div class="phone-screen__name">5K Run Club</div><div class="phone-screen__detail">Sat 8AM · Central Park</div></div><div class="phone-screen__match">&#127939;</div></div>
+                    <div class="phone-screen__card"><div class="phone-screen__avatar" style="background:linear-gradient(135deg,#9b72e8,#e85c4a);"></div><div class="phone-screen__info"><div class="phone-screen__name">HIIT Challenge</div><div class="phone-screen__detail">Starts Mon · 48 joined</div></div><div class="phone-screen__match">&#128293;</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. VIDEO/DEMO SECTION (NEW) ==================== -->
+    <section id="video-demo" class="video-section" aria-label="See SPARK in Action">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-label reveal">See It Live</p>
+          <h2 class="section-title reveal">See SPARK in Action</h2>
+          <p class="section-subtitle reveal">Watch how real users connect through fitness every day.</p>
+        </div>
+
+        <div class="video__hero reveal">
+          <div class="video__player" id="videoPlayer" role="button" tabindex="0" aria-label="Play demo video">
+            <div class="video__poster">
+              <div class="video__poster-bg">
+                <div class="video__poster-gradient"></div>
+                <div class="video__poster-text">SPARK Demo</div>
+              </div>
+            </div>
+            <button class="video__play-btn" aria-label="Play video">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="video__features">
+          <div class="video__feature reveal stagger-item" data-stagger="0">
+            <div class="video__feature-thumb" style="background:linear-gradient(135deg,var(--buddy-teal),var(--gold));">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h4 class="video__feature-title">AI Matching</h4>
+            <p class="video__feature-desc">See how our algorithm finds your perfect fitness partner in seconds.</p>
+          </div>
+          <div class="video__feature reveal stagger-item" data-stagger="1">
+            <div class="video__feature-thumb" style="background:linear-gradient(135deg,var(--spark-red),var(--community-purple));">
+              <i class="fa-solid fa-video"></i>
+            </div>
+            <h4 class="video__feature-title">Video Workout Dates</h4>
+            <p class="video__feature-desc">Work out together from anywhere with our real-time video feature.</p>
+          </div>
+          <div class="video__feature reveal stagger-item" data-stagger="2">
+            <div class="video__feature-thumb" style="background:linear-gradient(135deg,var(--gold),var(--spark-red));">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h4 class="video__feature-title">Trust &amp; Safety</h4>
+            <p class="video__feature-desc">Every user is verified. Every interaction is protected.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. TRUST & SAFETY ==================== -->
+    <section id="safety" class="safety-section" aria-label="Trust and Safety">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-label reveal">Trust &amp; Safety Center</p>
+          <h2 class="section-title reveal">Enterprise-Grade Security</h2>
+          <p class="section-subtitle reveal">Every feature starts with one question: does this make our users safer?</p>
+        </div>
+
+        <div class="safety__grid">
+          <div class="safety-card reveal stagger-item" data-stagger="0">
+            <div class="safety-card__icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="14" width="24" height="16" rx="3" stroke="currentColor" stroke-width="2"/><path d="M10 14v-4a6 6 0 0112 0v4" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="22" r="2" fill="currentColor"/></svg></div>
+            <h3 class="safety-card__title">End-to-End Encryption</h3>
+            <p class="safety-card__desc">All messages and video calls are encrypted using AES-256. Your conversations stay private.</p>
+          </div>
+          <div class="safety-card reveal stagger-item" data-stagger="1">
+            <div class="safety-card__icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M8 28c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="currentColor" stroke-width="2"/><path d="M22 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3 class="safety-card__title">Photo Verification</h3>
+            <p class="safety-card__desc">AI-powered selfie verification ensures every profile photo is real and recent.</p>
+          </div>
+          <div class="safety-card reveal stagger-item" data-stagger="2">
+            <div class="safety-card__icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4l10 5v7c0 6.627-4.373 12-10 14C10.373 28 6 22.627 6 16V9l10-5z" stroke="currentColor" stroke-width="2"/><path d="M12 16l3 3 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3 class="safety-card__title">Trust Score System</h3>
+            <p class="safety-card__desc">Earned through verified workouts, community feedback, and consistent positive behavior.</p>
+          </div>
+          <div class="safety-card reveal stagger-item" data-stagger="3">
+            <div class="safety-card__icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/><path d="M16 8v8l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <h3 class="safety-card__title">24/7 Moderation</h3>
+            <p class="safety-card__desc">Our team monitors the platform around the clock. Report issues and get responses in minutes.</p>
+          </div>
+          <div class="safety-card reveal stagger-item" data-stagger="4">
+            <div class="safety-card__icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="3" y="6" width="26" height="20" rx="3" stroke="currentColor" stroke-width="2"/><path d="M3 12h26M8 18h4M8 22h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <h3 class="safety-card__title">GDPR Compliant</h3>
+            <p class="safety-card__desc">Full data privacy compliance. Export or delete your data anytime.</p>
+          </div>
+          <div class="safety-card reveal stagger-item" data-stagger="5">
+            <div class="safety-card__icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4l10 5v7c0 6.627-4.373 12-10 14C10.373 28 6 22.627 6 16V9l10-5z" stroke="currentColor" stroke-width="2"/><text x="11" y="22" font-size="10" font-weight="700" fill="currentColor">II</text></svg></div>
+            <h3 class="safety-card__title">SOC 2 Certified</h3>
+            <p class="safety-card__desc">Type II certification validates our security controls, data handling, and operational integrity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. SUCCESS STORIES GALLERY (NEW) ==================== -->
+    <section id="success-stories" class="stories-section" aria-label="Success Stories Gallery">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-label reveal">Real Connections</p>
+          <h2 class="section-title reveal">Success Stories</h2>
+          <p class="section-subtitle reveal">Real couples. Real workouts. Real love.</p>
+        </div>
+
+        <div class="stories__grid">
+          <div class="story-card reveal stagger-item" data-stagger="0">
+            <div class="story-card__avatars">
+              <div class="story-card__avatar" style="background:linear-gradient(135deg,#e85c4a,#e8a634);"><span>JT</span></div>
+              <div class="story-card__avatar" style="background:linear-gradient(135deg,#3bb8a8,#e8a634);"><span>MR</span></div>
+            </div>
+            <h4 class="story-card__names">Jessica &amp; Marcus</h4>
+            <p class="story-card__fitness">Running &amp; CrossFit</p>
+            <blockquote class="story-card__quote">"Our first date was a 5K. We've now run two marathons together and couldn't be happier."</blockquote>
+            <div class="story-card__meta"><i class="fa-solid fa-heart"></i> Together since March 2024</div>
+          </div>
+
+          <div class="story-card reveal stagger-item" data-stagger="1">
+            <div class="story-card__avatars">
+              <div class="story-card__avatar" style="background:linear-gradient(135deg,#9b72e8,#e85c4a);"><span>PK</span></div>
+              <div class="story-card__avatar" style="background:linear-gradient(135deg,#e8a634,#9b72e8);"><span>DW</span></div>
+            </div>
+            <h4 class="story-card__names">Priya &amp; David</h4>
+            <p class="story-card__fitness">Yoga &amp; Weightlifting</p>
+            <blockquote class="story-card__quote">"We balance each other perfectly — she keeps me flexible, I keep her strong."</blockquote>
+            <div class="story-card__meta"><i class="fa-solid fa-heart"></i> Together since July 2024</div>
+          </div>
+
+          <div class="story-card reveal stagger-item" data-stagger="2">
+            <div class="story-card__avatars">
+              <div class="story-card__avatar" style="background:linear-gradient(135deg,#3bb8a8,#9b72e8);"><span>AM</span></div>
+              <div class="story-card__avatar" style="background:linear-gradient(135deg,#e85c4a,#3bb8a8);"><span>RJ</span></div>
+            </div>
+            <h4 class="story-card__names">Alyssa &amp; Ryan</h4>
+            <p class="story-card__fitness">CrossFit Partners</p>
+            <blockquote class="story-card__quote">"We did a video workout date first. It was awkward, hilarious, and completely real. Engaged now!"</blockquote>
+            <div class="story-card__meta"><i class="fa-solid fa-heart"></i> Together since Jan 2024</div>
+          </div>
+
+          <div class="story-card reveal stagger-item" data-stagger="3">
+            <div class="story-card__avatars">
+              <div class="story-card__avatar" style="background:linear-gradient(135deg,#e8a634,#3bb8a8);"><span>LM</span></div>
+              <div class="story-card__avatar" style="background:linear-gradient(135deg,#9b72e8,#e8a634);"><span>KS</span></div>
+            </div>
+            <h4 class="story-card__names">Luis &amp; Kim</h4>
+            <p class="story-card__fitness">HIIT &amp; Swimming</p>
+            <blockquote class="story-card__quote">"SPARK matched us at 96%. Turns out the algorithm knows us better than we know ourselves."</blockquote>
+            <div class="story-card__meta"><i class="fa-solid fa-heart"></i> Together since Nov 2023</div>
+          </div>
+
+          <div class="story-card reveal stagger-item" data-stagger="4">
+            <div class="story-card__avatars">
+              <div class="story-card__avatar" style="background:linear-gradient(135deg,#e85c4a,#9b72e8);"><span>NB</span></div>
+              <div class="story-card__avatar" style="background:linear-gradient(135deg,#3bb8a8,#e85c4a);"><span>TH</span></div>
+            </div>
+            <h4 class="story-card__names">Nina &amp; Tyler</h4>
+            <p class="story-card__fitness">Cycling &amp; Running</p>
+            <blockquote class="story-card__quote">"We bonded over our love of cycling and haven't stopped riding together since."</blockquote>
+            <div class="story-card__meta"><i class="fa-solid fa-heart"></i> Together since May 2024</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 9. TESTIMONIALS CAROUSEL ==================== -->
+    <section id="testimonials" class="testimonials-section" aria-label="Testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-label reveal">Testimonials</p>
+          <h2 class="section-title reveal">What Our Users Say</h2>
+        </div>
+
+        <div class="carousel reveal" aria-label="Testimonial carousel" role="region">
+          <div class="carousel__track" id="carouselTrack">
+            <div class="carousel__slide">
+              <div class="testimonial-card">
+                <div class="testimonial-card__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="testimonial-card__text">"I was tired of dating apps where nobody actually wanted to do anything. On SPARK, my first date was a 5K together. We've been running — and dating — ever since."</p>
+                <div class="testimonial-card__author">
+                  <div class="testimonial-card__avatar-placeholder" style="background:linear-gradient(135deg,#e85c4a,#e8a634);"><span>JT</span></div>
+                  <div class="testimonial-card__info"><h4>Jessica T.</h4><p>Runner · Austin, TX</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel__slide">
+              <div class="testimonial-card">
+                <div class="testimonial-card__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="testimonial-card__text">"Buddy Mode found me a gym partner who matches my schedule perfectly. We push each other every day. Best app for accountability I've ever used."</p>
+                <div class="testimonial-card__author">
+                  <div class="testimonial-card__avatar-placeholder" style="background:linear-gradient(135deg,#3bb8a8,#9b72e8);"><span>MJ</span></div>
+                  <div class="testimonial-card__info"><h4>Marcus J.</h4><p>Weightlifting · Brooklyn, NY</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel__slide">
+              <div class="testimonial-card">
+                <div class="testimonial-card__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="testimonial-card__text">"The Trust Score system made me feel safe enough to actually meet people. Knowing my date was verified and accountable changed everything for me."</p>
+                <div class="testimonial-card__author">
+                  <div class="testimonial-card__avatar-placeholder" style="background:linear-gradient(135deg,#9b72e8,#3bb8a8);"><span>PK</span></div>
+                  <div class="testimonial-card__info"><h4>Priya K.</h4><p>Yoga · San Francisco, CA</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel__slide">
+              <div class="testimonial-card">
+                <div class="testimonial-card__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="testimonial-card__text">"We did a video workout date as our first interaction. It was awkward, hilarious, and completely real. Engaged now. Thanks SPARK!"</p>
+                <div class="testimonial-card__author">
+                  <div class="testimonial-card__avatar-placeholder" style="background:linear-gradient(135deg,#e8a634,#e85c4a);"><span>AM</span></div>
+                  <div class="testimonial-card__info"><h4>Alyssa M.</h4><p>CrossFit · Chicago, IL</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel__slide">
+              <div class="testimonial-card">
+                <div class="testimonial-card__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="testimonial-card__text">"I moved to a new city and didn't know anyone. Community Mode connected me with a CrossFit group that became my best friends."</p>
+                <div class="testimonial-card__author">
+                  <div class="testimonial-card__avatar-placeholder" style="background:linear-gradient(135deg,#3bb8a8,#e8a634);"><span>DW</span></div>
+                  <div class="testimonial-card__info"><h4>David W.</h4><p>CrossFit · Denver, CO</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel__controls">
+            <button class="carousel__btn carousel__btn--prev" aria-label="Previous testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="carousel__dots" id="carouselDots"></div>
+            <button class="carousel__btn carousel__btn--next" aria-label="Next testimonial"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 10. PRICING ==================== -->
+    <section id="pricing" class="pricing-section" aria-label="Pricing">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-label reveal">Pricing</p>
+          <h2 class="section-title reveal">Choose Your Plan</h2>
+          <p class="section-subtitle reveal">Start free. Upgrade when you're ready for more.</p>
+        </div>
+
+        <div class="pricing__grid">
+          <div class="pricing-card reveal stagger-item" data-stagger="0">
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Free</h3>
+              <div class="pricing-card__price">$0<span>/mo</span></div>
+              <p class="pricing-card__tagline">Everything you need to start</p>
+            </div>
+            <ul class="pricing-card__features">
+              <li><i class="fa-solid fa-check"></i> Buddy Mode access</li>
+              <li><i class="fa-solid fa-check"></i> Community Mode access</li>
+              <li><i class="fa-solid fa-check"></i> 10 daily swipes in Spark Mode</li>
+              <li><i class="fa-solid fa-check"></i> Basic workout logging</li>
+              <li><i class="fa-solid fa-check"></i> Community events</li>
+              <li class="pricing-card__feature--disabled"><i class="fa-solid fa-xmark"></i> Advanced AI matching</li>
+              <li class="pricing-card__feature--disabled"><i class="fa-solid fa-xmark"></i> Video workout dates</li>
+            </ul>
+            <a href="#download" class="btn btn--outline btn--block">Get Started Free</a>
+          </div>
+
+          <div class="pricing-card pricing-card--featured reveal stagger-item" data-stagger="1">
+            <div class="pricing-card__badge">Most Popular</div>
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Premium</h3>
+              <div class="pricing-card__price">$14.99<span>/mo</span></div>
+              <p class="pricing-card__tagline">For serious fitness dating</p>
+            </div>
+            <ul class="pricing-card__features">
+              <li><i class="fa-solid fa-check"></i> Everything in Free</li>
+              <li><i class="fa-solid fa-check"></i> Unlimited swipes</li>
+              <li><i class="fa-solid fa-check"></i> AI Compatibility Engine</li>
+              <li><i class="fa-solid fa-check"></i> Video workout dates</li>
+              <li><i class="fa-solid fa-check"></i> Advanced filters</li>
+              <li><i class="fa-solid fa-check"></i> See who liked you</li>
+              <li class="pricing-card__feature--disabled"><i class="fa-solid fa-xmark"></i> AI Coach &amp; plans</li>
+            </ul>
+            <a href="#download" class="btn btn--primary btn--block">Start Free Trial</a>
+          </div>
+
+          <div class="pricing-card reveal stagger-item" data-stagger="2">
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Elite</h3>
+              <div class="pricing-card__price">$24.99<span>/mo</span></div>
+              <p class="pricing-card__tagline">The complete SPARK experience</p>
+            </div>
+            <ul class="pricing-card__features">
+              <li><i class="fa-solid fa-check"></i> Everything in Premium</li>
+              <li><i class="fa-solid fa-check"></i> AI Personal Coach</li>
+              <li><i class="fa-solid fa-check"></i> Couples workout plans</li>
+              <li><i class="fa-solid fa-check"></i> Priority support</li>
+              <li><i class="fa-solid fa-check"></i> Exclusive events</li>
+              <li><i class="fa-solid fa-check"></i> Profile boost weekly</li>
+              <li><i class="fa-solid fa-check"></i> Early access to features</li>
+            </ul>
+            <a href="#download" class="btn btn--outline btn--block">Start Free Trial</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 11. ROI CALCULATOR (NEW) ==================== -->
+    <section id="roi-calculator" class="roi-section" aria-label="ROI Calculator">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-label reveal">For Fitness Businesses</p>
+          <h2 class="section-title reveal">Calculate Your ROI</h2>
+          <p class="section-subtitle reveal">See how partnering with SPARK can grow your business.</p>
+        </div>
+
+        <div class="roi__wrapper reveal">
+          <div class="roi__inputs">
+            <div class="roi__input-group">
+              <label for="roiMembers">Number of Members</label>
+              <input type="range" id="roiMembers" min="50" max="5000" value="500" step="50">
+              <div class="roi__input-value" id="roiMembersValue">500</div>
+            </div>
+            <div class="roi__input-group">
+              <label for="roiFee">Avg Monthly Membership ($)</label>
+              <input type="range" id="roiFee" min="20" max="200" value="60" step="5">
+              <div class="roi__input-value" id="roiFeeValue">$60</div>
+            </div>
+            <div class="roi__input-group">
+              <label for="roiRetention">Current Retention Rate (%)</label>
+              <input type="range" id="roiRetention" min="30" max="95" value="65" step="1">
+              <div class="roi__input-value" id="roiRetentionValue">65%</div>
+            </div>
+          </div>
+
+          <div class="roi__results">
+            <div class="roi__result">
+              <div class="roi__result-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="roi__result-value" id="roiRevenue">$0</div>
+              <div class="roi__result-label">Projected Revenue Increase / yr</div>
+            </div>
+            <div class="roi__result">
+              <div class="roi__result-icon"><i class="fa-solid fa-users"></i></div>
+              <div class="roi__result-value" id="roiEngagement">0%</div>
+              <div class="roi__result-label">Member Engagement Boost</div>
+            </div>
+            <div class="roi__result">
+              <div class="roi__result-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+              <div class="roi__result-value" id="roiRetentionResult">0%</div>
+              <div class="roi__result-label">Retention Improvement</div>
+            </div>
+          </div>
+
+          <div class="roi__cta">
+            <a href="mailto:hello@sparkfit.app" class="btn btn--primary"><i class="fa-solid fa-handshake"></i> Partner with SPARK</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 12. ENTERPRISE / B2B (NEW) ==================== -->
+    <section id="enterprise" class="enterprise-section" aria-label="SPARK for Business">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-label reveal">For Business</p>
+          <h2 class="section-title reveal">SPARK for Business</h2>
+          <p class="section-subtitle reveal">For gyms, fitness studios, and corporate wellness programs.</p>
+        </div>
+
+        <div class="enterprise__grid">
+          <div class="enterprise-card reveal stagger-item" data-stagger="0">
+            <div class="enterprise-card__header">
+              <h3 class="enterprise-card__name">Basic</h3>
+              <div class="enterprise-card__price">Free<span> listing</span></div>
+            </div>
+            <ul class="enterprise-card__features">
+              <li><i class="fa-solid fa-check"></i> Business profile on SPARK</li>
+              <li><i class="fa-solid fa-check"></i> Member discovery</li>
+              <li><i class="fa-solid fa-check"></i> Community events listing</li>
+              <li><i class="fa-solid fa-check"></i> Basic analytics</li>
+              <li class="enterprise-card__feature--disabled"><i class="fa-solid fa-xmark"></i> Branded experience</li>
+              <li class="enterprise-card__feature--disabled"><i class="fa-solid fa-xmark"></i> API access</li>
+            </ul>
+            <a href="mailto:hello@sparkfit.app" class="btn btn--outline btn--block btn--sm">Get Started</a>
+          </div>
+
+          <div class="enterprise-card enterprise-card--featured reveal stagger-item" data-stagger="1">
+            <div class="enterprise-card__badge">Recommended</div>
+            <div class="enterprise-card__header">
+              <h3 class="enterprise-card__name">Pro</h3>
+              <div class="enterprise-card__price">$99<span>/mo</span></div>
+            </div>
+            <ul class="enterprise-card__features">
+              <li><i class="fa-solid fa-check"></i> Everything in Basic</li>
+              <li><i class="fa-solid fa-check"></i> Branded experience</li>
+              <li><i class="fa-solid fa-check"></i> Analytics dashboard</li>
+              <li><i class="fa-solid fa-check"></i> Member integration</li>
+              <li><i class="fa-solid fa-check"></i> Priority support</li>
+              <li class="enterprise-card__feature--disabled"><i class="fa-solid fa-xmark"></i> Custom API</li>
+            </ul>
+            <a href="mailto:hello@sparkfit.app" class="btn btn--primary btn--block btn--sm">Start Pro</a>
+          </div>
+
+          <div class="enterprise-card reveal stagger-item" data-stagger="2">
+            <div class="enterprise-card__header">
+              <h3 class="enterprise-card__name">Enterprise</h3>
+              <div class="enterprise-card__price">Custom</div>
+            </div>
+            <ul class="enterprise-card__features">
+              <li><i class="fa-solid fa-check"></i> Everything in Pro</li>
+              <li><i class="fa-solid fa-check"></i> Custom API access</li>
+              <li><i class="fa-solid fa-check"></i> White-label option</li>
+              <li><i class="fa-solid fa-check"></i> Dedicated account manager</li>
+              <li><i class="fa-solid fa-check"></i> SLA guarantee</li>
+              <li><i class="fa-solid fa-check"></i> Corporate wellness integration</li>
+            </ul>
+            <a href="mailto:hello@sparkfit.app" class="btn btn--outline btn--block btn--sm">Schedule a Demo</a>
+          </div>
+        </div>
+
+        <div class="enterprise__logos reveal">
+          <p class="enterprise__logos-label">Trusted by leading fitness brands</p>
+          <div class="enterprise__logos-row">
+            <span class="enterprise__logo-item">EquinoxFit</span>
+            <span class="enterprise__logo-item">CorePower</span>
+            <span class="enterprise__logo-item">PeakGym</span>
+            <span class="enterprise__logo-item">FitLife Co</span>
+            <span class="enterprise__logo-item">ZenStudio</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 13. BLOG / CONTENT HUB (NEW) ==================== -->
+    <section id="blog" class="blog-section" aria-label="Blog and Content Hub">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-label reveal">Content Hub</p>
+          <h2 class="section-title reveal">From the SPARK Blog</h2>
+          <p class="section-subtitle reveal">Fitness tips, dating advice, and the latest from our team.</p>
+        </div>
+
+        <div class="blog__filters reveal" role="tablist" aria-label="Blog category filter">
+          <button class="blog__filter active" data-category="all" role="tab" aria-selected="true">All</button>
+          <button class="blog__filter" data-category="fitness" role="tab" aria-selected="false">Fitness</button>
+          <button class="blog__filter" data-category="dating" role="tab" aria-selected="false">Dating</button>
+          <button class="blog__filter" data-category="technology" role="tab" aria-selected="false">Technology</button>
+          <button class="blog__filter" data-category="community" role="tab" aria-selected="false">Community</button>
+        </div>
+
+        <div class="blog__grid" id="blogGrid">
+          <article class="blog-card reveal stagger-item" data-stagger="0" data-category="fitness">
+            <div class="blog-card__image" style="background:linear-gradient(135deg,var(--buddy-teal),var(--gold));"><i class="fa-solid fa-heart-pulse"></i></div>
+            <div class="blog-card__content">
+              <div class="blog-card__meta"><span class="blog-card__tag blog-card__tag--fitness">Fitness</span><span class="blog-card__time">5 min read</span></div>
+              <h4 class="blog-card__title">5 Science-Backed Benefits of Working Out With a Partner</h4>
+              <p class="blog-card__excerpt">Research shows partner workouts increase motivation by 200% and improve consistency. Here's why.</p>
+              <a href="#" class="blog-card__link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal stagger-item" data-stagger="1" data-category="technology">
+            <div class="blog-card__image" style="background:linear-gradient(135deg,var(--community-purple),var(--buddy-teal));"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="blog-card__content">
+              <div class="blog-card__meta"><span class="blog-card__tag blog-card__tag--tech">Technology</span><span class="blog-card__time">8 min read</span></div>
+              <h4 class="blog-card__title">How SPARK's Trust Score Works</h4>
+              <p class="blog-card__excerpt">A deep dive into our verification system that keeps every interaction safe and authentic.</p>
+              <a href="#" class="blog-card__link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal stagger-item" data-stagger="2" data-category="dating">
+            <div class="blog-card__image" style="background:linear-gradient(135deg,var(--spark-red),var(--gold));"><i class="fa-solid fa-fire"></i></div>
+            <div class="blog-card__content">
+              <div class="blog-card__meta"><span class="blog-card__tag blog-card__tag--dating">Dating</span><span class="blog-card__time">6 min read</span></div>
+              <h4 class="blog-card__title">From Swipe to Squat: Real SPARK Success Stories</h4>
+              <p class="blog-card__excerpt">How three couples went from matching on SPARK to training — and falling in love — together.</p>
+              <a href="#" class="blog-card__link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal stagger-item" data-stagger="3" data-category="dating">
+            <div class="blog-card__image" style="background:linear-gradient(135deg,var(--gold),var(--spark-red));"><i class="fa-solid fa-brain"></i></div>
+            <div class="blog-card__content">
+              <div class="blog-card__meta"><span class="blog-card__tag blog-card__tag--dating">Dating</span><span class="blog-card__time">7 min read</span></div>
+              <h4 class="blog-card__title">The Psychology of Fitness Dating</h4>
+              <p class="blog-card__excerpt">Why couples who sweat together stay together — the neuroscience behind shared physical activity.</p>
+              <a href="#" class="blog-card__link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal stagger-item" data-stagger="4" data-category="technology">
+            <div class="blog-card__image" style="background:linear-gradient(135deg,var(--buddy-teal),var(--community-purple));"><i class="fa-solid fa-robot"></i></div>
+            <div class="blog-card__content">
+              <div class="blog-card__meta"><span class="blog-card__tag blog-card__tag--tech">Technology</span><span class="blog-card__time">10 min read</span></div>
+              <h4 class="blog-card__title">SPARK's AI Matching: Under the Hood</h4>
+              <p class="blog-card__excerpt">How our machine learning models analyze 50+ data points to find your perfect fitness match.</p>
+              <a href="#" class="blog-card__link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal stagger-item" data-stagger="5" data-category="community">
+            <div class="blog-card__image" style="background:linear-gradient(135deg,var(--community-purple),var(--spark-red));"><i class="fa-solid fa-users"></i></div>
+            <div class="blog-card__content">
+              <div class="blog-card__meta"><span class="blog-card__tag blog-card__tag--community">Community</span><span class="blog-card__time">4 min read</span></div>
+              <h4 class="blog-card__title">Building Community Through Group Fitness</h4>
+              <p class="blog-card__excerpt">How SPARK's Community Mode is creating local fitness tribes in 200+ cities worldwide.</p>
+              <a href="#" class="blog-card__link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 14. COMMUNITY IMPACT DASHBOARD (NEW) ==================== -->
+    <section id="impact" class="impact-section" aria-label="Community Impact Dashboard">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-label reveal">Community Impact</p>
+          <h2 class="section-title reveal">Making a Difference Together</h2>
+          <p class="section-subtitle reveal">Every workout on SPARK contributes to a healthier world.</p>
+        </div>
+
+        <div class="impact__grid">
+          <div class="impact-card reveal stagger-item" data-stagger="0">
+            <div class="impact-card__icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+            <div class="impact-card__value" data-target="2300000" data-prefix="$" data-format="abbr-impact">$0</div>
+            <div class="impact-card__label">Total Charity Donations</div>
+          </div>
+          <div class="impact-card reveal stagger-item" data-stagger="1">
+            <div class="impact-card__icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="impact-card__value" data-target="8500000" data-suffix="" data-format="abbr-impact">0</div>
+            <div class="impact-card__label">Workout Hours Logged</div>
+          </div>
+          <div class="impact-card reveal stagger-item" data-stagger="2">
+            <div class="impact-card__icon"><i class="fa-solid fa-leaf"></i></div>
+            <div class="impact-card__value" data-target="12000" data-suffix=" tons" data-format="comma-impact">0</div>
+            <div class="impact-card__label">Carbon Offset</div>
+          </div>
+          <div class="impact-card reveal stagger-item" data-stagger="3">
+            <div class="impact-card__icon"><i class="fa-solid fa-city"></i></div>
+            <div class="impact-card__value" data-target="200" data-suffix="+" data-format="plain-impact">0</div>
+            <div class="impact-card__label">Cities Active</div>
+          </div>
+        </div>
+
+        <div class="impact__map reveal">
+          <div class="impact__map-visual">
+            <svg viewBox="0 0 960 600" class="impact__map-svg" aria-label="Activity map across US cities">
+              <!-- Simplified US outline -->
+              <path d="M200 150 Q250 120 350 130 Q450 100 550 120 Q650 110 750 140 Q800 160 820 200 Q830 280 800 350 Q780 400 720 430 Q650 460 550 450 Q450 470 350 440 Q250 420 200 380 Q160 340 150 280 Q140 220 200 150Z" fill="none" stroke="var(--border-default)" stroke-width="1.5"/>
+              <!-- Activity dots -->
+              <circle cx="280" cy="350" r="8" fill="var(--gold)" opacity="0.6"><animate attributeName="r" values="6;10;6" dur="3s" repeatCount="indefinite"/></circle>
+              <circle cx="350" cy="280" r="6" fill="var(--spark-red)" opacity="0.5"><animate attributeName="r" values="4;8;4" dur="2.5s" repeatCount="indefinite"/></circle>
+              <circle cx="720" cy="250" r="10" fill="var(--gold)" opacity="0.7"><animate attributeName="r" values="8;12;8" dur="2.8s" repeatCount="indefinite"/></circle>
+              <circle cx="680" cy="320" r="7" fill="var(--buddy-teal)" opacity="0.5"><animate attributeName="r" values="5;9;5" dur="3.2s" repeatCount="indefinite"/></circle>
+              <circle cx="500" cy="200" r="5" fill="var(--community-purple)" opacity="0.4"><animate attributeName="r" values="3;7;3" dur="2.7s" repeatCount="indefinite"/></circle>
+              <circle cx="400" cy="350" r="6" fill="var(--gold)" opacity="0.5"><animate attributeName="r" values="4;8;4" dur="3.1s" repeatCount="indefinite"/></circle>
+              <circle cx="580" cy="300" r="8" fill="var(--spark-red)" opacity="0.6"><animate attributeName="r" values="6;10;6" dur="2.9s" repeatCount="indefinite"/></circle>
+              <circle cx="450" cy="250" r="5" fill="var(--buddy-teal)" opacity="0.4"><animate attributeName="r" values="3;7;3" dur="3.3s" repeatCount="indefinite"/></circle>
+              <!-- City labels -->
+              <text x="720" y="240" fill="var(--text-tertiary)" font-size="10" text-anchor="middle">NYC</text>
+              <text x="280" y="340" fill="var(--text-tertiary)" font-size="10" text-anchor="middle">LA</text>
+              <text x="500" y="190" fill="var(--text-tertiary)" font-size="10" text-anchor="middle">Chicago</text>
+              <text x="350" y="270" fill="var(--text-tertiary)" font-size="10" text-anchor="middle">Denver</text>
+              <text x="680" y="310" fill="var(--text-tertiary)" font-size="10" text-anchor="middle">DC</text>
+              <text x="400" y="340" fill="var(--text-tertiary)" font-size="10" text-anchor="middle">Austin</text>
+              <text x="580" y="290" fill="var(--text-tertiary)" font-size="10" text-anchor="middle">Atlanta</text>
+              <text x="240" y="200" fill="var(--text-tertiary)" font-size="10" text-anchor="middle">SF</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 15. CHARITY PARTNERS ==================== -->
+    <section id="charity" class="charity-section" aria-label="Charity Partners">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-label reveal">Give Back</p>
+          <h2 class="section-title reveal">Charity Partners</h2>
+          <p class="section-subtitle reveal">When you click these links, 100% of your donation goes directly to the charity. SPARK doesn't take a cut.</p>
+        </div>
+
+        <div class="charity__grid">
+          <a href="https://www.feedingamerica.org/donate" target="_blank" rel="noopener noreferrer" class="charity-card reveal stagger-item" data-stagger="0">
+            <i class="fa-solid fa-wheat-awn charity-card__icon"></i>
+            <span class="charity-card__name">Feeding America</span>
+          </a>
+          <a href="https://www.redcross.org/donate/donation.html" target="_blank" rel="noopener noreferrer" class="charity-card reveal stagger-item" data-stagger="1">
+            <i class="fa-solid fa-hand-holding-medical charity-card__icon"></i>
+            <span class="charity-card__name">Red Cross</span>
+          </a>
+          <a href="https://www.stjude.org/donate/donate-to-st-jude.html" target="_blank" rel="noopener noreferrer" class="charity-card reveal stagger-item" data-stagger="2">
+            <i class="fa-solid fa-child-reaching charity-card__icon"></i>
+            <span class="charity-card__name">St. Jude</span>
+          </a>
+          <a href="https://www.habitat.org/donate" target="_blank" rel="noopener noreferrer" class="charity-card reveal stagger-item" data-stagger="3">
+            <i class="fa-solid fa-house-chimney charity-card__icon"></i>
+            <span class="charity-card__name">Habitat for Humanity</span>
+          </a>
+          <a href="https://support.worldwildlife.org/site/Donation" target="_blank" rel="noopener noreferrer" class="charity-card reveal stagger-item" data-stagger="4">
+            <i class="fa-solid fa-paw charity-card__icon"></i>
+            <span class="charity-card__name">WWF</span>
+          </a>
+          <a href="https://donate.doctorswithoutborders.org/secure/donate" target="_blank" rel="noopener noreferrer" class="charity-card reveal stagger-item" data-stagger="5">
+            <i class="fa-solid fa-stethoscope charity-card__icon"></i>
+            <span class="charity-card__name">Doctors Without Borders</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 16. PRESS & PARTNERSHIPS ==================== -->
+    <section id="press" class="press-section" aria-label="Press and Partnerships">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-label reveal">As Featured In</p>
+          <h2 class="section-title reveal">Press &amp; Partnerships</h2>
+        </div>
+
+        <div class="press__logos reveal">
+          <div class="press__logo"><span class="press__logo-text">TechCrunch</span></div>
+          <div class="press__logo"><span class="press__logo-text">Forbes</span></div>
+          <div class="press__logo"><span class="press__logo-text">WIRED</span></div>
+          <div class="press__logo"><span class="press__logo-text">Men's Health</span></div>
+          <div class="press__logo"><span class="press__logo-text">Shape</span></div>
+          <div class="press__logo"><span class="press__logo-text">Fast Company</span></div>
+        </div>
+
+        <div class="press__cta reveal">
+          <p>Interested in partnering with SPARK?</p>
+          <a href="mailto:hello@sparkfit.app" class="btn btn--outline btn--sm">Partnership Inquiries <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 17. DEVELOPER API PORTAL (NEW - Enhanced) ==================== -->
+    <section id="developers" class="dev-section" aria-label="Developer API Portal">
+      <div class="container">
+        <div class="dev__grid">
+          <div class="dev__card reveal">
+            <div class="dev__card-header">
+              <span class="dev__card-badge">For Developers</span>
+              <h3 class="dev__card-title">SPARK API</h3>
+            </div>
+            <p class="dev__card-desc">Integrate fitness matching, social features, and community tools into your own platform.</p>
+
+            <div class="api__tabs" role="tablist" aria-label="Code language tabs">
+              <button class="api__tab active" data-lang="js" role="tab" aria-selected="true">JavaScript</button>
+              <button class="api__tab" data-lang="python" role="tab" aria-selected="false">Python</button>
+              <button class="api__tab" data-lang="swift" role="tab" aria-selected="false">Swift</button>
+            </div>
+
+            <div class="dev__code api__code-panel active" data-lang="js">
+              <div class="dev__code-bar">
+                <span class="dev__code-dot"></span><span class="dev__code-dot"></span><span class="dev__code-dot"></span>
+                <span class="dev__code-filename">api-example.js</span>
+                <button class="dev__code-copy" aria-label="Copy code" title="Copy code"><i class="fa-solid fa-copy"></i></button>
+              </div>
+              <pre class="dev__code-block"><code><span class="code-kw">const</span> spark = <span class="code-kw">await</span> <span class="code-fn">fetch</span>(<span class="code-str">'https://api.sparkfit.app/v2/match'</span>, {
+  <span class="code-key">method</span>: <span class="code-str">'POST'</span>,
+  <span class="code-key">headers</span>: { <span class="code-str">'Authorization'</span>: <span class="code-str">`Bearer ${API_KEY}`</span> },
+  <span class="code-key">body</span>: JSON.<span class="code-fn">stringify</span>({
+    <span class="code-key">fitness_type</span>: <span class="code-str">'crossfit'</span>,
+    <span class="code-key">intensity</span>: <span class="code-str">'advanced'</span>,
+    <span class="code-key">radius_miles</span>: <span class="code-num">10</span>
+  })
+});</code></pre>
+            </div>
+
+            <div class="dev__code api__code-panel" data-lang="python" hidden>
+              <div class="dev__code-bar">
+                <span class="dev__code-dot"></span><span class="dev__code-dot"></span><span class="dev__code-dot"></span>
+                <span class="dev__code-filename">api_example.py</span>
+                <button class="dev__code-copy" aria-label="Copy code" title="Copy code"><i class="fa-solid fa-copy"></i></button>
+              </div>
+              <pre class="dev__code-block"><code><span class="code-kw">import</span> requests
+
+response = requests.<span class="code-fn">post</span>(
+    <span class="code-str">'https://api.sparkfit.app/v2/match'</span>,
+    <span class="code-key">headers</span>={<span class="code-str">'Authorization'</span>: <span class="code-str">f'Bearer {API_KEY}'</span>},
+    <span class="code-key">json</span>={
+        <span class="code-str">'fitness_type'</span>: <span class="code-str">'crossfit'</span>,
+        <span class="code-str">'intensity'</span>: <span class="code-str">'advanced'</span>,
+        <span class="code-str">'radius_miles'</span>: <span class="code-num">10</span>
+    }
+)
+matches = response.<span class="code-fn">json</span>()</code></pre>
+            </div>
+
+            <div class="dev__code api__code-panel" data-lang="swift" hidden>
+              <div class="dev__code-bar">
+                <span class="dev__code-dot"></span><span class="dev__code-dot"></span><span class="dev__code-dot"></span>
+                <span class="dev__code-filename">APIExample.swift</span>
+                <button class="dev__code-copy" aria-label="Copy code" title="Copy code"><i class="fa-solid fa-copy"></i></button>
+              </div>
+              <pre class="dev__code-block"><code><span class="code-kw">let</span> url = URL(<span class="code-key">string</span>: <span class="code-str">"https://api.sparkfit.app/v2/match"</span>)!
+<span class="code-kw">var</span> request = URLRequest(<span class="code-key">url</span>: url)
+request.<span class="code-key">httpMethod</span> = <span class="code-str">"POST"</span>
+request.<span class="code-fn">setValue</span>(<span class="code-str">"Bearer \(apiKey)"</span>, <span class="code-key">forHTTPHeaderField</span>: <span class="code-str">"Authorization"</span>)
+
+<span class="code-kw">let</span> body: [String: Any] = [
+    <span class="code-str">"fitness_type"</span>: <span class="code-str">"crossfit"</span>,
+    <span class="code-str">"intensity"</span>: <span class="code-str">"advanced"</span>,
+    <span class="code-str">"radius_miles"</span>: <span class="code-num">10</span>
+]</code></pre>
+            </div>
+
+            <div class="api__endpoints">
+              <h4>API Endpoints</h4>
+              <div class="api__endpoint"><span class="api__method api__method--post">POST</span> <code>/v2/matches</code> <span class="api__endpoint-desc">Find compatible matches</span></div>
+              <div class="api__endpoint"><span class="api__method api__method--get">GET</span> <code>/v2/users/{id}</code> <span class="api__endpoint-desc">Get user profile</span></div>
+              <div class="api__endpoint"><span class="api__method api__method--get">GET</span> <code>/v2/workouts</code> <span class="api__endpoint-desc">List workouts</span></div>
+              <div class="api__endpoint"><span class="api__method api__method--post">POST</span> <code>/v2/events</code> <span class="api__endpoint-desc">Create community event</span></div>
+            </div>
+
+            <div class="api__info">
+              <div class="api__info-item"><strong>Rate Limit:</strong> 1,000 requests/hour</div>
+              <div class="api__info-item"><strong>Auth:</strong> Bearer token (OAuth 2.0)</div>
+              <div class="api__info-item"><strong>Format:</strong> JSON / REST</div>
+            </div>
+
+            <a href="mailto:hello@sparkfit.app" class="btn btn--outline btn--sm">Request API Access <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <div class="dev__card dev__card--investor reveal">
+            <div class="dev__card-header">
+              <span class="dev__card-badge dev__card-badge--gold">For Investors</span>
+              <h3 class="dev__card-title">Growth Metrics</h3>
+            </div>
+            <p class="dev__card-desc">SPARK is growing fast. Here's a snapshot of our key metrics.</p>
+            <div class="dev__metrics">
+              <div class="dev__metric"><div class="dev__metric-value">312%</div><div class="dev__metric-label">YoY Growth</div></div>
+              <div class="dev__metric"><div class="dev__metric-value">68%</div><div class="dev__metric-label">30-Day Retention</div></div>
+              <div class="dev__metric"><div class="dev__metric-value">$4.2M</div><div class="dev__metric-label">ARR</div></div>
+              <div class="dev__metric"><div class="dev__metric-value">22min</div><div class="dev__metric-label">Avg Session</div></div>
+            </div>
+            <a href="mailto:hello@sparkfit.app" class="btn btn--primary btn--sm">Investor Inquiries <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 18. CAREERS (NEW) ==================== -->
+    <section id="careers" class="careers-section" aria-label="Careers at SPARK">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-label reveal">Careers</p>
+          <h2 class="section-title reveal">Join the Team</h2>
+          <p class="section-subtitle reveal">Help us build the future of fitness connection. We're a remote-first team passionate about health, community, and safety.</p>
+        </div>
+
+        <div class="careers__values reveal">
+          <div class="careers__value"><i class="fa-solid fa-shield-halved"></i><span>Safety First</span></div>
+          <div class="careers__value"><i class="fa-solid fa-dumbbell"></i><span>Fitness Forward</span></div>
+          <div class="careers__value"><i class="fa-solid fa-people-group"></i><span>Inclusive by Design</span></div>
+          <div class="careers__value"><i class="fa-solid fa-lock"></i><span>Privacy Always</span></div>
+        </div>
+
+        <div class="careers__grid">
+          <div class="career-card reveal stagger-item" data-stagger="0">
+            <div class="career-card__info">
+              <h4 class="career-card__title">Senior iOS Engineer</h4>
+              <div class="career-card__meta"><span>Engineering</span><span>Remote / SF</span><span>Full-time</span></div>
+            </div>
+            <a href="mailto:careers@sparkfit.app?subject=Application: Senior iOS Engineer" class="btn btn--outline btn--sm">Apply Now</a>
+          </div>
+          <div class="career-card reveal stagger-item" data-stagger="1">
+            <div class="career-card__info">
+              <h4 class="career-card__title">Android Developer</h4>
+              <div class="career-card__meta"><span>Engineering</span><span>Remote / NYC</span><span>Full-time</span></div>
+            </div>
+            <a href="mailto:careers@sparkfit.app?subject=Application: Android Developer" class="btn btn--outline btn--sm">Apply Now</a>
+          </div>
+          <div class="career-card reveal stagger-item" data-stagger="2">
+            <div class="career-card__info">
+              <h4 class="career-card__title">ML Engineer</h4>
+              <div class="career-card__meta"><span>Engineering</span><span>Remote / SF</span><span>Full-time</span></div>
+            </div>
+            <a href="mailto:careers@sparkfit.app?subject=Application: ML Engineer" class="btn btn--outline btn--sm">Apply Now</a>
+          </div>
+          <div class="career-card reveal stagger-item" data-stagger="3">
+            <div class="career-card__info">
+              <h4 class="career-card__title">Product Designer</h4>
+              <div class="career-card__meta"><span>Design</span><span>Remote</span><span>Full-time</span></div>
+            </div>
+            <a href="mailto:careers@sparkfit.app?subject=Application: Product Designer" class="btn btn--outline btn--sm">Apply Now</a>
+          </div>
+          <div class="career-card reveal stagger-item" data-stagger="4">
+            <div class="career-card__info">
+              <h4 class="career-card__title">Community Manager</h4>
+              <div class="career-card__meta"><span>Community</span><span>Remote / NYC</span><span>Full-time</span></div>
+            </div>
+            <a href="mailto:careers@sparkfit.app?subject=Application: Community Manager" class="btn btn--outline btn--sm">Apply Now</a>
+          </div>
+          <div class="career-card reveal stagger-item" data-stagger="5">
+            <div class="career-card__info">
+              <h4 class="career-card__title">Head of Trust &amp; Safety</h4>
+              <div class="career-card__meta"><span>Trust &amp; Safety</span><span>SF</span><span>Full-time</span></div>
+            </div>
+            <a href="mailto:careers@sparkfit.app?subject=Application: Head of Trust %26 Safety" class="btn btn--outline btn--sm">Apply Now</a>
+          </div>
+        </div>
+
+        <div class="careers__perks reveal">
+          <h3 class="careers__perks-title">Team Perks</h3>
+          <div class="careers__perks-grid">
+            <div class="careers__perk"><i class="fa-solid fa-heart-pulse"></i><span>Health &amp; Dental</span></div>
+            <div class="careers__perk"><i class="fa-solid fa-dumbbell"></i><span>Gym Membership</span></div>
+            <div class="careers__perk"><i class="fa-solid fa-umbrella-beach"></i><span>Flexible PTO</span></div>
+            <div class="careers__perk"><i class="fa-solid fa-chart-line"></i><span>Equity Package</span></div>
+            <div class="careers__perk"><i class="fa-solid fa-house-laptop"></i><span>Remote-First</span></div>
+            <div class="careers__perk"><i class="fa-solid fa-graduation-cap"></i><span>Learning Budget</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 19. DOWNLOAD ==================== -->
+    <section id="download" class="download-section" aria-label="Download">
+      <div class="container">
+        <div class="download__content reveal">
+          <p class="section-label">Get Started</p>
+          <h2 class="download__title">Ready to Find Your Fitness Match?</h2>
+          <p class="download__subtitle">Available on iOS, Android, and Web. Join 50,000+ members today.</p>
+
+          <div class="download__badges">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="store-badge" aria-label="Download on the App Store">
+              <i class="fa-brands fa-apple store-badge__icon"></i>
+              <div class="store-badge__text"><small>Download on the</small><span>App Store</span></div>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="store-badge" aria-label="Get it on Google Play">
+              <i class="fa-brands fa-google-play store-badge__icon"></i>
+              <div class="store-badge__text"><small>Get it on</small><span>Google Play</span></div>
+            </a>
+          </div>
+
+          <div class="download__qr" aria-label="QR code placeholder">
+            <div class="qr-placeholder">
+              <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+                <rect width="120" height="120" rx="12" fill="white"/>
+                <rect x="12" y="12" width="32" height="32" rx="4" fill="#0e0d0b"/>
+                <rect x="76" y="12" width="32" height="32" rx="4" fill="#0e0d0b"/>
+                <rect x="12" y="76" width="32" height="32" rx="4" fill="#0e0d0b"/>
+                <rect x="20" y="20" width="16" height="16" rx="2" fill="white"/>
+                <rect x="84" y="20" width="16" height="16" rx="2" fill="white"/>
+                <rect x="20" y="84" width="16" height="16" rx="2" fill="white"/>
+                <rect x="24" y="24" width="8" height="8" fill="#0e0d0b"/>
+                <rect x="88" y="24" width="8" height="8" fill="#0e0d0b"/>
+                <rect x="24" y="88" width="8" height="8" fill="#0e0d0b"/>
+                <rect x="52" y="12" width="8" height="8" fill="#0e0d0b"/>
+                <rect x="52" y="28" width="8" height="8" fill="#0e0d0b"/>
+                <rect x="52" y="52" width="16" height="16" rx="2" fill="#e8a634"/>
+                <rect x="76" y="56" width="8" height="8" fill="#0e0d0b"/>
+                <rect x="92" y="56" width="8" height="8" fill="#0e0d0b"/>
+                <rect x="56" y="76" width="8" height="8" fill="#0e0d0b"/>
+                <rect x="76" y="76" width="8" height="8" fill="#0e0d0b"/>
+                <rect x="92" y="92" width="8" height="8" fill="#0e0d0b"/>
+              </svg>
+              <span>Scan to Download</span>
+            </div>
+          </div>
+
+          <div class="download__form">
+            <p>Or get the download link sent to your email</p>
+            <form id="emailForm" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="33d53555-6c83-4eeb-8175-bcedcd48b63e">
+              <input type="hidden" name="subject" value="SPARK App — Download Link Request">
+              <input type="hidden" name="from_name" value="SPARK Website">
+              <input type="hidden" name="redirect" value="">
+              <div class="form-row">
+                <label for="email-input" class="sr-only">Email address</label>
+                <input type="email" id="email-input" name="email" placeholder="Enter your email" required autocomplete="email">
+                <button type="submit" class="btn btn--primary btn--sm"><i class="fa-solid fa-paper-plane"></i> Send</button>
+              </div>
+            </form>
+            <div id="formMessage" class="form-message" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 20. FAQ ==================== -->
+    <section id="faq" class="faq-section" aria-label="FAQ">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-label reveal">FAQ</p>
+          <h2 class="section-title reveal">Questions? Answered.</h2>
+        </div>
+
+        <div class="faq__list">
+          <div class="faq-item reveal">
+            <button class="faq-item__question" aria-expanded="false"><span>What is SPARK?</span><i class="fa-solid fa-chevron-down"></i></button>
+            <div class="faq-item__answer" role="region"><div class="faq-item__answer-inner">SPARK is the #1 fitness-first dating and social app. It connects people through shared fitness interests — whether you're looking for a workout partner (Buddy Mode), a romantic connection (Spark Mode), or a fitness community (Community Mode). Our AI-powered matching goes beyond photos to find people who truly fit your lifestyle.</div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-item__question" aria-expanded="false"><span>How does matching work?</span><i class="fa-solid fa-chevron-down"></i></button>
+            <div class="faq-item__answer" role="region"><div class="faq-item__answer-inner">Our AI Compatibility Engine analyzes your fitness type, workout schedule, intensity level, goals, personality traits, and lifestyle preferences. Unlike traditional dating apps, we match on the things that predict long-term compatibility — shared habits, values, and activity levels.</div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-item__question" aria-expanded="false"><span>Is SPARK free to use?</span><i class="fa-solid fa-chevron-down"></i></button>
+            <div class="faq-item__answer" role="region"><div class="faq-item__answer-inner">Yes! SPARK's core features are completely free — Buddy Mode, Community Mode, basic Spark Mode with 10 daily swipes, and workout tracking. Premium ($14.99/mo) and Elite ($24.99/mo) tiers unlock unlimited matches, advanced AI coaching, priority support, and exclusive events.</div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-item__question" aria-expanded="false"><span>How does the Trust Score work?</span><i class="fa-solid fa-chevron-down"></i></button>
+            <div class="faq-item__answer" role="region"><div class="faq-item__answer-inner">Every user starts with a base Trust Score. It increases through verified activities: completing workouts, receiving positive community feedback, passing photo verification, and maintaining consistent, respectful behavior. Trust Scores are visible on profiles so you always know who you're connecting with.</div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-item__question" aria-expanded="false"><span>How does the charity partnership work?</span><i class="fa-solid fa-chevron-down"></i></button>
+            <div class="faq-item__answer" role="region"><div class="faq-item__answer-inner">SPARK partners with six charities. When you click a donation link on our site, you're taken directly to that charity's official donation page. 100% of your donation goes straight to the charity — SPARK doesn't take a cut.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER (Enhanced)
+       ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <svg width="28" height="28" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+              <rect width="36" height="36" rx="8" fill="#e8a634" opacity="0.12"/>
+              <path d="M18 6L22 14L18 12L14 14L18 6Z" fill="#e8a634"/>
+              <path d="M12 16L18 30L24 16L18 20L12 16Z" fill="#e8a634" opacity="0.7"/>
+            </svg>
+            SPARK
+          </div>
+          <p class="footer__brand-desc">The fitness-first dating &amp; social app. Train together. Date with purpose.</p>
+          <div class="footer__social">
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#safety">Safety</a></li>
+            <li><a href="#download">Download</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#charity">Charity Partners</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#press">Press</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Developers</h4>
+          <ul>
+            <li><a href="#developers">API Documentation</a></li>
+            <li><a href="#developers">Developer Portal</a></li>
+            <li><a href="#" class="footer__status-link"><span class="footer__status-dot"></span> Status Page</a></li>
+            <li><a href="mailto:hello@sparkfit.app">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">GDPR</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__newsletter reveal">
+        <div class="footer__newsletter-text">
+          <h4>Stay in the loop</h4>
+          <p>Get SPARK news, fitness tips, and exclusive offers.</p>
+        </div>
+        <form class="footer__newsletter-form" action="https://api.web3forms.com/submit" method="POST" id="newsletterForm">
+          <input type="hidden" name="access_key" value="33d53555-6c83-4eeb-8175-bcedcd48b63e">
+          <input type="hidden" name="subject" value="SPARK Newsletter Signup">
+          <input type="hidden" name="from_name" value="SPARK Website">
+          <input type="hidden" name="redirect" value="">
+          <label for="newsletter-email" class="sr-only">Email for newsletter</label>
+          <input type="email" id="newsletter-email" name="email" placeholder="you@email.com" required autocomplete="email">
+          <button type="submit" class="btn btn--primary btn--sm">Subscribe</button>
+        </form>
+        <div id="newsletterMessage" class="form-message" aria-live="polite"></div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 SPARK — All rights reserved.</p>
+        <div class="footer__bottom-right">
+          <div class="footer__system-status">
+            <span class="footer__status-indicator"></span>
+            All Systems Operational
+          </div>
+          <div class="footer__lang-selector">
+            <select id="langSelector" aria-label="Select language">
+              <option value="en" selected>EN</option>
+              <option value="es">ES</option>
+              <option value="fr">FR</option>
+              <option value="de">DE</option>
+              <option value="pt">PT</option>
+              <option value="jp">JP</option>
+            </select>
+          </div>
+          <p>hello@sparkfit.app</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Cookie Consent Banner -->
+  <div class="cookie-banner" id="cookieBanner" role="alert" aria-label="Cookie consent">
+    <div class="cookie-banner__content">
+      <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies. <a href="#" style="color:var(--gold);">Learn more</a></p>
+      <div class="cookie-banner__actions">
+        <button class="btn btn--primary btn--sm" id="cookieAccept">Accept</button>
+        <button class="btn btn--outline btn--sm" id="cookieDecline">Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
