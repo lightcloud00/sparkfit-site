@@ -14,24 +14,7 @@
   <link rel="stylesheet" href="./style.css">
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230e0d0b'/><text x='4' y='24' font-size='22' font-family='sans-serif' font-weight='900' fill='%23e8a634'>S</text></svg>">
-  <!-- Datadog RUM -->
-  <script src="https://www.datadoghq-browser-agent.com/us1/v5/datadog-rum.js" type="text/javascript"></script>
-  <script>
-    window.DD_RUM && window.DD_RUM.init({
-      applicationId: 'DD_APPLICATION_ID',
-      clientToken: 'DD_CLIENT_TOKEN',
-      site: 'us5.datadoghq.com',
-      service: 'sparkfit-site',
-      env: 'production',
-      sessionSampleRate: 100,
-      sessionReplaySampleRate: 20,
-      trackUserInteractions: true,
-      trackResources: true,
-      trackLongTasks: true,
-      defaultPrivacyLevel: 'mask-user-input'
-    });
-    window.DD_RUM && window.DD_RUM.startSessionReplayRecording();
-  </script>
+
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
@@ -97,7 +80,7 @@
               <div class="hero__avatar" style="background:linear-gradient(135deg,var(--community-purple),var(--spark-red))">A</div>
               <div class="hero__avatar" style="background:linear-gradient(135deg,var(--gold),var(--buddy-teal))">S</div>
             </div>
-            <p>Join <strong>5,000+</strong> beta members</p>
+            <p>Join the beta — <strong>now on iOS & Android</strong></p>
           </div>
         </div>
         <div class="hero__phone-wrapper reveal">
@@ -178,20 +161,20 @@
       <div class="container">
         <div class="stats__grid">
           <div class="stat reveal stagger-item" data-stagger="0">
-            <span class="stat__number" data-target="5000" data-format="abbr">0</span>
-            <span class="stat__label">Beta Members</span>
+            <span class="stat__number" data-target="2" data-format="plain">0</span>
+            <span class="stat__label">Platforms</span>
           </div>
           <div class="stat reveal stagger-item" data-stagger="1">
-            <span class="stat__number" data-target="1200" data-format="abbr" data-suffix="+">0</span>
-            <span class="stat__label">Workout Sessions</span>
+            <span class="stat__number" data-target="56" data-suffix="+">0</span>
+            <span class="stat__label">Exercises</span>
           </div>
           <div class="stat reveal stagger-item" data-stagger="2">
-            <span class="stat__number" data-target="4.9" data-decimal="true">0</span>
-            <span class="stat__label">App Store Rating</span>
+            <span class="stat__number" data-target="3" data-format="plain">0</span>
+            <span class="stat__label">Match Types</span>
           </div>
           <div class="stat reveal stagger-item" data-stagger="3">
-            <span class="stat__number" data-target="12" data-suffix="+">0</span>
-            <span class="stat__label">Cities</span>
+            <span class="stat__number">Free</span>
+            <span class="stat__label">To Download</span>
           </div>
         </div>
       </div>
@@ -513,16 +496,16 @@
         </div>
         <div class="charity__grid">
           <div class="charity-stat reveal stagger-item" data-stagger="0">
-            <span class="charity-stat__number" data-target="250000" data-prefix="$" data-format="comma-impact">$0</span>
-            <span class="charity-stat__label">Donated to Charity</span>
+            <span class="charity-stat__number">Goal</span>
+            <span class="charity-stat__label">Give Back as We Grow</span>
           </div>
           <div class="charity-stat reveal stagger-item" data-stagger="1">
-            <span class="charity-stat__number" data-target="12" data-format="plain-impact">0</span>
-            <span class="charity-stat__label">Non-Profit Partners</span>
+            <span class="charity-stat__number" data-target="1" data-format="plain-impact">0</span>
+            <span class="charity-stat__label">Cause Supported</span>
           </div>
           <div class="charity-stat reveal stagger-item" data-stagger="2">
-            <span class="charity-stat__number" data-target="5000" data-format="abbr-impact" data-suffix="+">0</span>
-            <span class="charity-stat__label">Kids Supported</span>
+            <span class="charity-stat__number">100%</span>
+            <span class="charity-stat__label">Mission-Driven</span>
           </div>
         </div>
       </div>
@@ -536,12 +519,7 @@
           <h2 class="section-title reveal">Press Coverage</h2>
         </div>
         <div class="press__grid reveal">
-          <div class="press-logo"><span>TechCrunch</span></div>
-          <div class="press-logo"><span>Forbes</span></div>
-          <div class="press-logo"><span>Wired</span></div>
-          <div class="press-logo"><span>The Verge</span></div>
-          <div class="press-logo"><span>Men's Health</span></div>
-          <div class="press-logo"><span>Women's Health</span></div>
+          <div class="press-logo"><span>Coming Soon</span></div>
         </div>
       </div>
     </section>
@@ -595,24 +573,24 @@
             <span class="investor-metric__label">Launch Year</span>
           </div>
           <div class="investor-metric">
-            <span class="investor-metric__value" data-target="5" data-suffix="K+">0</span>
-            <span class="investor-metric__label">Beta Users</span>
+            <span class="investor-metric__value">Beta</span>
+            <span class="investor-metric__label">Current Stage</span>
           </div>
           <div class="investor-metric">
             <span class="investor-metric__value" data-target="3">0</span>
             <span class="investor-metric__label">Platforms</span>
           </div>
           <div class="investor-metric">
-            <span class="investor-metric__value" data-target="72">0</span>
-            <span class="investor-metric__label">NPS</span>
+            <span class="investor-metric__value">TBD</span>
+            <span class="investor-metric__label">NPS (Post-Launch)</span>
           </div>
           <div class="investor-metric">
-            <span class="investor-metric__value" data-target="12" data-prefix="$">$0</span>
-            <span class="investor-metric__label">CAC</span>
+            <span class="investor-metric__value">TBD</span>
+            <span class="investor-metric__label">CAC (Post-Launch)</span>
           </div>
           <div class="investor-metric">
-            <span class="investor-metric__value" data-target="340" data-prefix="$">$0</span>
-            <span class="investor-metric__label">LTV</span>
+            <span class="investor-metric__value">TBD</span>
+            <span class="investor-metric__label">LTV (Post-Launch)</span>
           </div>
         </div>
 
@@ -643,9 +621,9 @@
             <div class="funding-step funding-step--complete">
               <div class="funding-step__dot"></div>
               <div class="funding-step__content">
-                <h4>Seed Round</h4>
-                <p class="funding-step__amount">$500K</p>
-                <p>Friends & family, angel investors · 2024</p>
+                <h4>Bootstrapped</h4>
+                <p class="funding-step__amount">Self-Funded</p>
+                <p>Built from the ground up · 2024–2026</p>
               </div>
             </div>
             <div class="funding-step funding-step--upcoming">
@@ -669,8 +647,8 @@
 
         <div class="investor__quotes reveal">
           <blockquote class="investor-quote">
-            <p>"SPARK is the most compelling fitness-social platform we've seen. The retention metrics are exceptional."</p>
-            <footer>— <strong>Early Beta User &amp; Advisor</strong></footer>
+            <p>"Fitness and dating are both $10B+ markets. SPARK is positioned at the intersection — a compelling opportunity."</p>
+            <footer>— <strong>Market Analysis</strong></footer>
           </blockquote>
         </div>
 
@@ -712,7 +690,7 @@
           </div>
           <div class="timeline__item timeline__item--right reveal" data-stagger="3">
             <div class="timeline__icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-            <div class="timeline__content"><h4>App Store Feature</h4><p>Apple featured SPARK as "App of the Day" in Health & Fitness.</p><span class="timeline__date">Sep 2024</span></div>
+            <div class="timeline__content"><h4>App Store Submission</h4><p>SPARK submitted to the App Store for review.</p><span class="timeline__date">2026</span></div>
           </div>
           <div class="timeline__item timeline__item--left reveal" data-stagger="4">
             <div class="timeline__icon"><i class="fa-solid fa-chart-line"></i></div>
@@ -724,7 +702,7 @@
           </div>
           <div class="timeline__item timeline__item--left reveal" data-stagger="6">
             <div class="timeline__icon"><i class="fa-solid fa-people-group"></i></div>
-            <div class="timeline__content"><h4>Public Launch</h4><p>Open to all fitness enthusiasts. Growing the community one connection at a time.</p><span class="timeline__date">Dec 2025</span></div>
+            <div class="timeline__content"><h4>Android Launch</h4><p>SPARK comes to Google Play. Same features, same experience.</p><span class="timeline__date">2026</span></div>
           </div>
           <div class="timeline__item timeline__item--right reveal" data-stagger="7">
             <div class="timeline__icon"><i class="fa-solid fa-globe"></i></div>
@@ -1148,9 +1126,7 @@ console.log(data);</code></pre></div>
             <h2 class="section-title">Stay in the Loop</h2>
             <p class="newsletter__desc">Fitness tips, dating advice, community stories, and product updates. Delivered weekly.</p>
             <div class="newsletter__proof">
-              <span>Join <strong>25,000+</strong> fitness enthusiasts</span>
-              <span>·</span>
-              <span>Featured in <strong>200+</strong> media outlets</span>
+              <span>Be the first to know about updates</span>
             </div>
             <form id="newsletterForm" class="newsletter__form" action="https://api.web3forms.com/submit" method="POST">
               <input type="hidden" name="access_key" value="33d53555-6c83-4eeb-8175-bcedcd48b63e">
@@ -1167,7 +1143,7 @@ console.log(data);</code></pre></div>
                 <span>Mar 30, 2026</span>
               </div>
               <h4>This Week: Spring Fitness Challenge Recap 🏃</h4>
-              <p>10,000 SPARK members completed the 30-day Spring Challenge. Here's what we learned about community-powered fitness...</p>
+              <p>SPARK is live on iOS and coming to Android. Here's what's next for the fitness-first dating app...</p>
             </div>
           </div>
         </div>
