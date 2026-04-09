@@ -1,5 +1,5 @@
 /* ============================================================
-   SPARK Enterprise v8.0 — Design System & Styles
+   SPARK Enterprise v8.0 (App v5.3.0) — Design System & Styles
    Premium dark-themed fitness dating app landing page
    ============================================================ */
 
@@ -893,6 +893,110 @@ input[type="range"]::-moz-range-thumb { width: 20px; height: 20px; border-radius
 .form-message { font-size: var(--text-xs); margin-top: 0.5rem; min-height: 1.25rem; }
 .form-message--success { color: var(--buddy-teal); }
 .form-message--error { color: var(--spark-red); }
+
+/* ============================================================
+   SHARE WORKOUT DATES SECTION — v5.3.0
+   ============================================================ */
+.share-section {
+  padding: var(--section-py) 0;
+  background: var(--bg-elevated);
+  position: relative;
+  overflow: hidden;
+}
+.share-section::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(ellipse, var(--gold-glow) 0%, transparent 70%);
+  pointer-events: none;
+}
+.share-card-demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 1rem;
+}
+.mock-date-card {
+  background: linear-gradient(145deg, #1a1710 0%, #111008 100%);
+  border: 1px solid rgba(232, 166, 52, 0.30);
+  border-radius: 20px;
+  padding: 2.5rem 2.8rem 2rem;
+  min-width: 300px;
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
+  box-shadow:
+    0 0 0 1px rgba(232, 166, 52, 0.08),
+    0 8px 32px rgba(0, 0, 0, 0.5),
+    0 0 60px rgba(232, 166, 52, 0.12),
+    inset 0 1px 0 rgba(232, 166, 52, 0.10);
+  position: relative;
+  isolation: isolate;
+}
+.mock-date-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: radial-gradient(ellipse at 50% 0%, rgba(232, 166, 52, 0.07) 0%, transparent 60%);
+  pointer-events: none;
+}
+.date-card-spark {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.2rem;
+  opacity: 0.9;
+}
+.date-card-emoji {
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+  filter: drop-shadow(0 0 12px rgba(232, 166, 52, 0.4));
+}
+.date-card-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+.date-card-people {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.6rem;
+}
+.date-card-details {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  font-weight: 400;
+  margin-bottom: 1.4rem;
+  letter-spacing: 0.02em;
+}
+.date-card-footer {
+  font-size: var(--text-xs);
+  color: var(--text-faint);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  border-top: 1px solid rgba(232, 166, 52, 0.12);
+  padding-top: 0.9rem;
+}
+@media (max-width: 480px) {
+  .mock-date-card { padding: 2rem 1.8rem 1.5rem; min-width: 0; max-width: 100%; }
+}
 
 /* ============================================================
    FOCUS VISIBLE
