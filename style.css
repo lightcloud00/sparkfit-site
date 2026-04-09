@@ -275,6 +275,100 @@ section { padding: clamp(3rem, 6vw, 6rem) 0; }
 @media (max-width: 600px) { .features__panel-grid { grid-template-columns: 1fr; } }
 
 /* ============================================================
+   FITNESS VERIFIED SECTION
+   ============================================================ */
+.verified-section {
+  background: var(--bg);
+  position: relative;
+  overflow: hidden;
+}
+.verified-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(232, 166, 52, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.verified__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.verified-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition-interactive), border-color var(--transition-interactive), box-shadow var(--transition-interactive);
+}
+.verified-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  border-radius: inherit;
+  transition: opacity var(--transition-interactive);
+  pointer-events: none;
+}
+.verified-card:hover {
+  transform: translateY(-6px);
+}
+.verified-card--bronze::after,
+.verified-card:nth-child(1)::after { background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(184, 115, 51, 0.12) 0%, transparent 70%); }
+.verified-card--silver::after,
+.verified-card:nth-child(2)::after { background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(170, 169, 173, 0.12) 0%, transparent 70%); }
+.verified-card--gold::after,
+.verified-card:nth-child(3)::after  { background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(232, 166, 52, 0.18) 0%, transparent 70%); }
+.verified-card:hover::after { opacity: 1; }
+.verified-card:nth-child(1):hover { border-color: rgba(184, 115, 51, 0.4); box-shadow: 0 12px 40px rgba(184, 115, 51, 0.15); }
+.verified-card:nth-child(2):hover { border-color: rgba(170, 169, 173, 0.4); box-shadow: 0 12px 40px rgba(170, 169, 173, 0.12); }
+.verified-card:nth-child(3):hover { border-color: rgba(232, 166, 52, 0.45); box-shadow: 0 12px 40px rgba(232, 166, 52, 0.2); }
+.verified-badge {
+  font-size: 3.5rem;
+  display: block;
+  margin-bottom: 1.25rem;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.4));
+}
+.verified-badge--bronze {
+  filter: drop-shadow(0 4px 16px rgba(184, 115, 51, 0.5));
+}
+.verified-badge--silver {
+  filter: drop-shadow(0 4px 16px rgba(170, 169, 173, 0.4));
+}
+.verified-badge--gold {
+  filter: drop-shadow(0 4px 16px rgba(232, 166, 52, 0.55));
+}
+.verified-card h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: var(--text-xl);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  position: relative;
+  z-index: 1;
+}
+.verified-card:nth-child(1) h3 { color: #cd7f32; }
+.verified-card:nth-child(2) h3 { color: #aaa9ad; }
+.verified-card:nth-child(3) h3 { background: linear-gradient(135deg, var(--gold), var(--buddy-teal)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.verified-card p {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 768px) { .verified__grid { grid-template-columns: 1fr; max-width: 360px; margin-inline: auto; } }
+@media (max-width: 480px) { .verified-card { padding: 2rem 1.5rem; } }
+
+/* ============================================================
    TRUST & SAFETY
    ============================================================ */
 .trust__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
