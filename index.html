@@ -22,7 +22,7 @@
   <!-- NAVIGATION -->
   <nav class="nav" id="nav" aria-label="Main navigation">
     <div class="container nav__inner">
-      <a href="#" class="nav__logo" aria-label="SPARK Home">
+      <a href="/" class="nav__logo" aria-label="SPARK Home">
         <svg width="120" height="36" viewBox="0 0 120 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <rect width="36" height="36" rx="8" fill="var(--gold)"/>
           <path d="M11 25.5V19.5C11 16 13 12 18 10.5C20.5 9.5 23 10 24 11C25 12 24.5 14 22.5 14.5C20.5 15 19 13.5 20 12" stroke="#0e0d0b" stroke-width="2.5" stroke-linecap="round"/>
@@ -413,7 +413,7 @@
           </div>
           <div class="pricing-card pricing-card--featured reveal stagger-item" data-stagger="1">
             <div class="pricing-card__badge">Most Popular</div>
-            <div class="pricing-card__header"><h3>SPARK+</h3><div class="pricing-card__price">$14.99<span>/mo</span></div></div>
+            <div class="pricing-card__header"><h3>SPARK Pro</h3><div class="pricing-card__price">$9.99<span>/mo</span></div></div>
             <ul class="pricing-card__features">
               <li><i class="fa-solid fa-check"></i> Unlimited swipes</li>
               <li><i class="fa-solid fa-check"></i> AI-powered matching</li>
@@ -425,9 +425,9 @@
             <a href="#download" class="btn btn--primary btn--block">Start Free Trial</a>
           </div>
           <div class="pricing-card reveal stagger-item" data-stagger="2">
-            <div class="pricing-card__header"><h3>SPARK Elite</h3><div class="pricing-card__price">$29.99<span>/mo</span></div></div>
+            <div class="pricing-card__header"><h3>SPARK Elite</h3><div class="pricing-card__price">$19.99<span>/mo</span></div></div>
             <ul class="pricing-card__features">
-              <li><i class="fa-solid fa-check"></i> Everything in SPARK+</li>
+              <li><i class="fa-solid fa-check"></i> Everything in SPARK Pro</li>
               <li><i class="fa-solid fa-check"></i> Personal AI coach</li>
               <li><i class="fa-solid fa-check"></i> See who liked you</li>
               <li><i class="fa-solid fa-check"></i> Boost profile weekly</li>
@@ -1029,9 +1029,9 @@
         </div>
         <div class="podcast__badges reveal">
           <span>Listen on:</span>
-          <a href="#" target="_blank" class="podcast-badge"><i class="fa-brands fa-apple"></i> Apple Podcasts</a>
-          <a href="#" target="_blank" class="podcast-badge"><i class="fa-brands fa-spotify"></i> Spotify</a>
-          <a href="#" target="_blank" class="podcast-badge"><i class="fa-brands fa-google"></i> Google Podcasts</a>
+          <a href="/support/" class="podcast-badge"><i class="fa-brands fa-apple"></i> Apple Podcasts</a>
+          <a href="/support/" class="podcast-badge"><i class="fa-brands fa-spotify"></i> Spotify</a>
+          <a href="/support/" class="podcast-badge"><i class="fa-brands fa-google"></i> Google Podcasts</a>
         </div>
       </div>
     </section>
@@ -1365,7 +1365,7 @@ console.log(data);</code></pre></div>
         <div class="faq__list">
           <div class="faq-item reveal">
             <button class="faq-item__question" aria-expanded="false"><span>Is SPARK free to use?</span><i class="fa-solid fa-plus"></i></button>
-            <div class="faq-item__answer"><p>Yes! SPARK is free to download and use with basic features. SPARK+ and SPARK Elite plans unlock additional features like unlimited swipes, video dates, and AI coaching.</p></div>
+            <div class="faq-item__answer"><p>Yes! SPARK is free to download and use with basic features. SPARK Pro and SPARK Elite plans unlock additional features like unlimited swipes, video dates, and AI coaching.</p></div>
           </div>
           <div class="faq-item reveal">
             <button class="faq-item__question" aria-expanded="false"><span>How does the matching algorithm work?</span><i class="fa-solid fa-plus"></i></button>
@@ -1476,11 +1476,11 @@ console.log(data);</code></pre></div>
           </svg>
           <p>Where fitness meets connection. The #1 fitness-first dating and social app.</p>
           <div class="footer__social">
-            <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="/support/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="/support/" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="/support/" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="/support/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="/support/" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
           </div>
         </div>
         <div class="footer__links">
@@ -1508,16 +1508,17 @@ console.log(data);</code></pre></div>
           <a href="mailto:hello@sparkfit.app">Press</a>
         </div>
       </div>
-      <div class="footer__bottom">
-        <p>&copy; 2026 SPARK Fitness Inc. All rights reserved.</p>
-        <div class="footer__legal">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#accessibility">Accessibility</a>
+        <div class="footer__bottom">
+          <p>&copy; 2026 SPARK Fitness Inc. All rights reserved.</p>
+          <div class="footer__legal">
+            <a href="/privacy/">Privacy Policy</a>
+            <a href="/terms/">Terms of Service</a>
+            <a href="/support/">Support</a>
+            <a href="/safety/">Safety Center</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
   <!-- BACK TO TOP -->
   <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
