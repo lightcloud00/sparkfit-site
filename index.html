@@ -17,6 +17,19 @@
 
 </head>
 <body>
+  <!-- AGE VERIFICATION GATE -->
+  <div class="age-gate" id="ageGate" role="dialog" aria-modal="true" aria-label="Age verification">
+    <div class="age-gate__card">
+      <h2 class="age-gate__title">Age Verification</h2>
+      <p class="age-gate__subtitle">You must be 17 or older to use SPARK.</p>
+      <div class="age-gate__buttons" id="ageGateButtons">
+        <button id="ageConfirm" class="btn btn--primary">Yes, I'm 17 or older</button>
+        <button id="ageDeny" class="btn btn--outline">I'm under 17</button>
+      </div>
+      <p class="age-gate__denied" id="ageGateDenied" hidden>Sorry, SPARK requires users to be at least 17 years old.</p>
+    </div>
+  </div>
+
   <a href="#main" class="skip-link">Skip to content</a>
 
   <!-- NAVIGATION -->

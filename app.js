@@ -779,9 +779,39 @@
   }
 
   // ==========================================================
+  // 25. AGE VERIFICATION GATE
+  // ==========================================================
+  function initAgeGate() {
+    const gate = document.getElementById('ageGate');
+    if (!gate) return;
+
+    // Already verified in this browser
+    if (localStorage.getItem('spark_age_verified') === 'true') {
+      gate.hidden = true;
+      return;
+    }
+
+    const confirmBtn = document.getElementById('ageConfirm');
+    const denyBtn = document.getElementById('ageDeny');
+    const buttonsEl = document.getElementById('ageGateButtons');
+    const deniedEl = document.getElementById('ageGateDenied');
+
+    confirmBtn.addEventListener('click', () => {
+      localStorage.setItem('spark_age_verified', 'true');
+      gate.hidden = true;
+    });
+
+    denyBtn.addEventListener('click', () => {
+      buttonsEl.hidden = true;
+      deniedEl.hidden = false;
+    });
+  }
+
+  // ==========================================================
   // INIT
   // ==========================================================
   document.addEventListener('DOMContentLoaded', () => {
+    initAgeGate();
     initParticles();
     initNavigation();
     initSmoothScroll();
