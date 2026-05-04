@@ -1,1 +1,9 @@
 https://www.sparkfit.app/* https://sparkfit.app/:splat 301
+/privacy  /privacy/index.html  200!
+/privacy/ /privacy/index.html  200!
+/terms    /terms/index.html    200!
+/terms/   /terms/index.html    200!
+/support  /support/index.html  200!
+/support/ /support/index.html  200!
+/safety   /safety/index.html   200!
+/safety/  /safety/index.html   200!
