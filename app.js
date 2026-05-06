@@ -273,7 +273,7 @@
   }
 
   // ==========================================================
-  // 9. FORMS (Web3Forms)
+  // 9. FORMS
   // ==========================================================
   function initForms() {
     const forms = [
@@ -292,14 +292,23 @@
         const origHTML = btn.innerHTML;
         btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>'; btn.disabled = true;
         try {
-          const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: new FormData(form) });
+          const formData = new FormData(form);
+          const res = await fetch('/api/lead', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              ...Object.fromEntries(formData.entries()),
+              formId,
+              source: `sparkfit.app-${formId}`,
+            }),
+          });
           const data = await res.json();
           if (data.success) {
             msg.className = 'form-message form-message--success';
             msg.textContent = formId === 'investorForm' ? 'Request sent! We\'ll be in touch within 24 hours.' :
               formId === 'statusForm' ? 'Subscribed to status updates!' :
               formId === 'newsletterForm' ? 'Subscribed! Welcome to the SPARK community.' :
-              'Download link sent! Check your inbox.';
+              'You are on the launch update list. Check your inbox.';
             form.reset();
           } else throw new Error('fail');
         } catch (err) {
@@ -721,7 +730,7 @@
     for (let i = 0; i < 30; i++) {
       const bar = document.createElement('div');
       bar.className = 'status__bar status__bar--green';
-      bar.title = 'Day ' + (30 - i) + ': All systems operational';
+      bar.title = 'Readiness check ' + (30 - i) + ': pre-launch tracking';
       container.appendChild(bar);
     }
   }
