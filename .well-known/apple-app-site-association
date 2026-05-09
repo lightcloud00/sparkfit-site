@@ -1,0 +1,54 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "9QCR933V26.com.gusdigitalsolutions.spark"
+        ],
+        "components": [
+          {
+            "/": "/profile/*",
+            "comment": "Profile deep links"
+          },
+          {
+            "/": "/match/*",
+            "comment": "Match deep links"
+          },
+          {
+            "/": "/conversation/*",
+            "comment": "Conversation deep links"
+          },
+          {
+            "/": "/invite/*",
+            "comment": "Invite links"
+          },
+          {
+            "/": "/events/*",
+            "comment": "Event deep links"
+          },
+          {
+            "/": "/discover",
+            "comment": "Discover tab"
+          },
+          {
+            "/": "/likes",
+            "comment": "Likes tab"
+          },
+          {
+            "/": "/settings",
+            "comment": "Settings screen"
+          },
+          {
+            "/": "/reset-password",
+            "comment": "Password recovery"
+          },
+          {
+            "/": "/workout/checkin",
+            "comment": "Workout check-in"
+          }
+        ]
+      }
+    ]
+  }
+}
