@@ -281,6 +281,7 @@
       { formId: 'newsletterForm', messageId: 'newsletterMessage' },
       { formId: 'investorForm', messageId: 'investorMessage' },
       { formId: 'statusForm', messageId: 'statusMessage' },
+      { formId: 'popupLeadForm', messageId: 'popupLeadMessage' },
     ];
     forms.forEach(({ formId, messageId }) => {
       const form = document.getElementById(formId);
@@ -299,7 +300,7 @@
             body: JSON.stringify({
               ...Object.fromEntries(formData.entries()),
               formId,
-              source: `sparkfit.app-${formId}`,
+              source: formData.get('source') || `sparkfit.app-${formId}`,
             }),
           });
           const data = await res.json();
@@ -308,8 +309,12 @@
             msg.textContent = formId === 'investorForm' ? 'Request sent! We\'ll be in touch within 24 hours.' :
               formId === 'statusForm' ? 'Subscribed to status updates!' :
               formId === 'newsletterForm' ? 'Subscribed! Welcome to the SPARK community.' :
+              formId === 'popupLeadForm' ? 'You are on the SPARK update list.' :
               'You are on the launch update list. Check your inbox.';
             form.reset();
+            if (formId === 'popupLeadForm') {
+              localStorage.setItem('sparkCtaDismissedUntil', String(Date.now() + 1000 * 60 * 60 * 24 * 30));
+            }
           } else throw new Error('fail');
         } catch (err) {
           msg.className = 'form-message form-message--error';
@@ -319,6 +324,59 @@
         setTimeout(() => { msg.textContent = ''; msg.className = 'form-message'; }, 5000);
       });
     });
+  }
+
+  // ==========================================================
+  // 9b. RANDOM CTA POPUP
+  // ==========================================================
+  function initRandomCtaPopup() {
+    const modal = document.getElementById('leadModal');
+    if (!modal) return;
+
+    const params = new URLSearchParams(window.location.search);
+    const testMode = params.get('popupTest') === '1';
+    const dismissedUntil = Number(localStorage.getItem('sparkCtaDismissedUntil') || 0);
+    if (!testMode && dismissedUntil > Date.now()) return;
+
+    const closeButtons = modal.querySelectorAll('[data-lead-close]');
+    let hasShown = false;
+    let timerId;
+
+    const show = () => {
+      if (hasShown || modal.classList.contains('visible')) return;
+      hasShown = true;
+      modal.classList.add('visible');
+      modal.setAttribute('aria-hidden', 'false');
+      const email = document.getElementById('popupLeadEmail');
+      if (email) setTimeout(() => email.focus(), 80);
+    };
+
+    const close = () => {
+      modal.classList.remove('visible');
+      modal.setAttribute('aria-hidden', 'true');
+      if (!testMode) {
+        localStorage.setItem('sparkCtaDismissedUntil', String(Date.now() + 1000 * 60 * 60 * 24));
+      }
+    };
+
+    closeButtons.forEach((button) => button.addEventListener('click', close));
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && modal.classList.contains('visible')) close();
+    });
+
+    const triggerAtScroll = 0.42 + Math.random() * 0.18;
+    const onScroll = () => {
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollable <= 0) return;
+      if ((window.scrollY / scrollable) >= triggerAtScroll) {
+        window.removeEventListener('scroll', onScroll);
+        clearTimeout(timerId);
+        show();
+      }
+    };
+
+    timerId = setTimeout(show, testMode ? 700 : 18000 + Math.random() * 22000);
+    window.addEventListener('scroll', onScroll, { passive: true });
   }
 
   // ==========================================================
@@ -788,39 +846,9 @@
   }
 
   // ==========================================================
-  // 25. AGE VERIFICATION GATE
-  // ==========================================================
-  function initAgeGate() {
-    const gate = document.getElementById('ageGate');
-    if (!gate) return;
-
-    // Already verified in this browser
-    if (localStorage.getItem('spark_age_verified') === 'true') {
-      gate.hidden = true;
-      return;
-    }
-
-    const confirmBtn = document.getElementById('ageConfirm');
-    const denyBtn = document.getElementById('ageDeny');
-    const buttonsEl = document.getElementById('ageGateButtons');
-    const deniedEl = document.getElementById('ageGateDenied');
-
-    confirmBtn.addEventListener('click', () => {
-      localStorage.setItem('spark_age_verified', 'true');
-      gate.hidden = true;
-    });
-
-    denyBtn.addEventListener('click', () => {
-      buttonsEl.hidden = true;
-      deniedEl.hidden = false;
-    });
-  }
-
-  // ==========================================================
   // INIT
   // ==========================================================
   document.addEventListener('DOMContentLoaded', () => {
-    initAgeGate();
     initParticles();
     initNavigation();
     initSmoothScroll();
@@ -830,6 +858,7 @@
     initFeatureTabs();
     initFAQ();
     initForms();
+    initRandomCtaPopup();
     initPhone3D();
     initLiveDemo();
     initROICalculator();

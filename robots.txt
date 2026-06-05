@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# SPARK Fitness — Custom robots.txt
+# Allow all crawlers for indexing
+
+Sitemap: https://sparkfit.app/sitemap.xml
+
+# Prevent AI training crawlers from using content
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: AmazonBot
+Disallow: /

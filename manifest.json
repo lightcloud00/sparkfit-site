@@ -1,0 +1,25 @@
+{
+  "name": "SPARK — Fitness Dating",
+  "short_name": "SPARK",
+  "description": "Fitness-first dating app for people who want to meet around workouts, gym routines, and active goals. Built by the maker of IronLog and HungRecover.",
+  "start_url": "https://sparkfit.app/",
+  "display": "standalone",
+  "background_color": "#0e0d0b",
+  "theme_color": "#e8a634",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' rx='96' fill='%230e0d0b'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-size='320' font-family='sans-serif' font-weight='900' fill='%23e8a634'>S</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' rx='96' fill='%23e8a634'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-size='320' font-family='sans-serif' font-weight='900' fill='%230e0d0b'>S</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["lifestyle", "social", "healthcare"],
+  "prefer_related_applications": false
+}

@@ -1,6 +1,11 @@
 interface Env {
   LEADS?: KVNamespace;
+  RESEND_API_KEY?: string;
 }
+
+/** Escape HTML so user input can't inject markup into the notification email. */
+const escHtml = (s: string) =>
+  s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
 type LeadPayload = Record<string, unknown>;
 
@@ -54,6 +59,7 @@ async function handleLead(request: Request, env: Env): Promise<Response> {
   const createdAt = new Date().toISOString();
   const key = `sparkfit/${formId}/${createdAt.slice(0, 10)}/${crypto.randomUUID()}`;
 
+  const name = clean(payload.name, 100) || null;
   await env.LEADS.put(
     key,
     JSON.stringify({
@@ -62,7 +68,7 @@ async function handleLead(request: Request, env: Env): Promise<Response> {
       type: "lead",
       form_id: formId,
       email,
-      name: clean(payload.name, 100) || null,
+      name,
       firm: clean(payload.firm, 160) || null,
       subject: clean(payload.subject, 160) || null,
       source,
@@ -70,6 +76,41 @@ async function handleLead(request: Request, env: Env): Promise<Response> {
       ua: request.headers.get("user-agent") || null,
     }),
   );
+
+  // Notify Gus's inbox of the new lead (mirrors the working gusdigitalsolutions
+  // contact.ts Resend pattern). Non-fatal: the KV capture above already
+  // succeeded, so an email hiccup never loses a lead.
+  if (env.RESEND_API_KEY) {
+    try {
+      const safeEmail = escHtml(email);
+      const resendResponse = await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${env.RESEND_API_KEY}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from: "SparkFit Leads <onboarding@resend.dev>",
+          to: ["lightcloud007@gmail.com"],
+          subject: `New SparkFit lead: ${safeEmail}`,
+          html: `
+            <h2>New SparkFit website lead</h2>
+            <p><strong>Email:</strong> ${safeEmail}</p>
+            <p><strong>Name:</strong> ${name ? escHtml(name) : "(not given)"}</p>
+            <p><strong>Form:</strong> ${escHtml(formId)}</p>
+            <p><strong>Source:</strong> ${escHtml(source)}</p>
+            <p><strong>When:</strong> ${createdAt}</p>
+          `,
+          reply_to: email,
+        }),
+      });
+      if (!resendResponse.ok) {
+        console.error("[lead] resend error", await resendResponse.text());
+      }
+    } catch (mailErr) {
+      console.error("[lead] resend exception", mailErr);
+    }
+  }
 
   return json({ success: true, key });
 }
