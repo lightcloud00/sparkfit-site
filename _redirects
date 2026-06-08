@@ -9,3 +9,5 @@ https://www.sparkfit.app/.well-known/apple-app-site-association /.well-known/app
 /support/ /support/index.html  200!
 /safety   /safety/index.html   200!
 /safety/  /safety/index.html   200!
+/blog      /blog/index.html     200!
+/blog/     /blog/index.html     200!
